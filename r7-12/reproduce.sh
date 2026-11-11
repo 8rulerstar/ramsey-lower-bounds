@@ -1,6 +1,6 @@
 #!/bin/sh
 # Rebuild the 419-vertex (7,12)-graph and check it. Needs a C compiler and python3.
-# Quick part: about a minute. Independent-set part: about 25 minutes on 5 cores (set J for the number of jobs).
+# Quick part: about a minute. Independent-set part: about 30 minutes with 4 jobs (set J for the number of jobs, default 5).
 set -e
 cd "$(dirname "$0")"
 if command -v shasum >/dev/null 2>&1; then SHA="shasum -a 256"; else SHA=sha256sum; fi

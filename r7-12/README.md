@@ -19,7 +19,7 @@ The graph is not found by search. It is the gluing construction described in DS1
 ## Quick start
 
 ```sh
-sh reproduce.sh      # about 30 minutes with 4 jobs; J=8 sh reproduce.sh for 8
+sh reproduce.sh      # about 30 minutes with 4 jobs (default J=5); J=8 sh reproduce.sh for 8
 ```
 
 Expected output: checksums OK, the rebuild lines (or a note that the input is missing), `NONE mode=0 k=7 ...` (no K7), `roots with NONE (expect 419): 419`, `OK: R(7,12) > 419`.
