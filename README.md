@@ -1,5 +1,9 @@
 # New lower bounds for classical Ramsey numbers
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24128875.svg)](https://doi.org/10.5281/zenodo.24128875)
+
+Archived snapshots: Zenodo, all versions DOI [10.5281/zenodo.24128875](https://doi.org/10.5281/zenodo.24128875); v1.0 of 2026-11-11 is [10.5281/zenodo.24128876](https://doi.org/10.5281/zenodo.24128876).
+
 Graphs and colourings that improve lower bounds for classical Ramsey numbers, each with a checker you can run. The clique side is always checked by search. The table says how the independent side is established: by direct search, by an exhaustive certificate check on the graph (the triple-gluing rows: a program verifies the conditions of the proof on that graph), or by a published theorem. Most bounds here come from constructions listed in the dynamic survey *Small Ramsey Numbers* (DS1), applied to newer input graphs. R(6,16) and the `triple-gluing` bounds use a construction that glues three graphs along a common induced subgraph (theorem and proof in [`triple-gluing`](triple-gluing)); I have not found it in the literature.
 
 | bound | previous | graph | folder |
