@@ -4,6 +4,7 @@ Graphs that improve lower bounds for two-colour Ramsey numbers R(s,t), each with
 
 | bound | previous | graph | folder |
 |---|---|---|---|
+| R(8,19) >= 1239 | 1237 (DS1 #18) | 1238 vertices, gluing (DS1 2.2.h) with a newer (7,8)-graph | [`r8-19`](r8-19) |
 | R(7,12) >= 420 | 417 (DS1 #18) | 419 vertices, gluing construction (DS1 2.3.h) | [`r7-12`](r7-12) |
 | R(7,16) >= 649 | 629 (DS1 #18) | 648 vertices | [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16) |
 
