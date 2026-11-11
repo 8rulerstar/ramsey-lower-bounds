@@ -58,6 +58,9 @@ hence not to x_d(j) (E3); and x_d(j), x_d(l) for two W-vertices of I are non-adj
 
 **Corollary.** With M = K_{k-2} (contained in every Ramsey-critical (k,s)-graph for s >= 2):
 R(k, s_1 + s_2 + s_3 - 2) >= R(k,s_1) + R(k,s_2) + R(k,s_3) + 3k - 8, in particular R(k, s + 2) >= R(k, s) + 5k - 8.
+This general form is not new strength for k >= 5: Corollary 3 of Xu, Shao and Radziszowski (2011) with t = 3 gives
+R(k, s + 2) >= R(k, s) + R(3, k) + k - 2, which is equal for k = 5, 6 and larger for k >= 7. The gain of the theorem is in
+the structured cases above, where the three graphs share a large common part.
 
 ## Verification (2026-11-11, Apple M4 Pro)
 
