@@ -18,7 +18,7 @@ two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h; Xu-Shao-Radz
 
 Here G_1 = G_2 = G_3 = the Paley graph P(101), a (6,6)-graph, and M = the neighbourhood of vertex 0 (the 50 quadratic
 residues, no K5): 3 * 101 + 3 * 50 = 453 vertices, (6, 6 + 6 + 6 - 2) = (6,16). The construction is in
-`tripleglue.py` (rules E1 to E5 in its header). The proof of the general claim is being written up and reviewed. This folder does not rely on it: for this graph the
+`tripleglue.py` (rules E1 to E5 in its header). The proof of the general claim is in [`../triple-gluing`](../triple-gluing). This folder does not rely on it: for this graph the
 argument is checked exhaustively by `certify.py` (see Verification).
 
 ## Quick start
