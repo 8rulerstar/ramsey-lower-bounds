@@ -22,7 +22,7 @@ This depends on the 162-vertex (4,15)-graph posted in the google-research reposi
 ## Quick start
 
 ```sh
-git clone https://github.com/8rulerstar/ramsey-r7-16 && cd ramsey-r7-16
+git clone https://github.com/8rulerstar/ramsey-lower-bounds && cd ramsey-lower-bounds/r7-16
 sh reproduce.sh      # rebuilds the graph from the input and runs every check (about 20 minutes on 8 cores)
 ```
 
@@ -65,4 +65,4 @@ Byungkun Jang, independent researcher, bkbkjang@gmail.com
 
 ## License
 
-Code in this directory: MIT (see `LICENSE`). The file `R(4, 15) >= 163.txt` is an unchanged copy from google-research and `R4_15_162.txt` is a format conversion of it; both are under the Apache License 2.0 (copy in `LICENSES/Apache-2.0.txt`).
+Code in this directory: MIT (see `LICENSE_r7-16`). The file `R(4, 15) >= 163.txt` is an unchanged copy from google-research and `R4_15_162.txt` is a format conversion of it; both are under the Apache License 2.0 (copy in `LICENSES/Apache-2.0.txt`).

@@ -16,7 +16,7 @@ checks it directly. Nothing new is invented: it is the survey's construction app
 From a (3,15)-graph G on 73 vertices (no triangle, no independent 15-set), the colouring of Xu, Xie, Exoo and
 Radziszowski (EJC 11 (2004) #R35, Theorem 7) on 4 * 73 = 292 vertices, see `build.py`. `R3_15_73_input.txt` is the
 73-vertex graph `R(3, 15) >= 74.txt` of google-research `ramsey_number_bounds/improved_bounds` (AlphaEvolve, Nagda,
-Raghavan and Thakurta, arXiv:2603.09172), converted to this plain format; Apache License 2.0.
+Raghavan and Thakurta, arXiv:2603.09172), converted to this plain format; Apache License 2.0 (copy in `../r7-16/LICENSES/Apache-2.0.txt`).
 
 ## Verification (2026-11-11, Apple M4 Pro)
 

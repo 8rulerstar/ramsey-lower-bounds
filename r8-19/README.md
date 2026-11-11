@@ -1,5 +1,7 @@
 # A (8,19)-graph on 1238 vertices: R(8,19) >= 1239
 
+> Superseded: [`../triple-gluing`](../triple-gluing) gives R(8,19) >= 1267 (2026-11-11). This folder is kept as published.
+
 `R8_19_1238.txt` is a graph on 1238 vertices built so that it has no K8 and no independent set of size 19, which gives
 
 **R(8,19) >= 1239.**
@@ -38,5 +40,5 @@ sh reproduce.sh      # about 2 minutes; put g78.218 next to it to also rebuild a
    `verify`, see `../r7-12`).
 3. **Not done: a direct check that the graph has no independent set of size 19.** Single low roots of `vpar` take
    more than 5 minutes each, and there are 1238 roots. The independent-set side rests on DS1 2.3.h and 2.3.i (XXER
-   Theorem 9) with the hypotheses above checked by machine. A direct check that G816 is an (8,13)-graph is running.
+   Theorem 9) with the hypotheses above checked by machine. A direct check that G816 is an (8,13)-graph was started on 2026-11-11 and stopped (it follows from XXER Theorem 9).
 4. The checkers and scripts were written by me with the help of an AI coding assistant (Claude).

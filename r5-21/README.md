@@ -32,6 +32,7 @@ sh reproduce.sh      # put r55_42some.g6 next to it to also rebuild and check th
 2. Rebuild from `r55_42some.g6` matches the file byte for byte. `build.py` checks the induced copy of M and that both
    parts are triangle-free. G384: no K5 and no independent 17-set (`vpar` over all 384 roots, 3.5e8 nodes, 75 s).
    H42: `verify 5 5`.
-3. **Not done yet: a direct check that the 444-vertex graph has no independent set of size 21** (running). Until
-   then the independent-set side rests on the theorem above with machine-checked hypotheses.
+3. **Not done: a direct check that the 444-vertex graph has no independent set of size 21.** A root-by-root search was
+   started on 2026-11-11 and stopped as infeasible. The independent-set side rests on the theorem above with
+   machine-checked hypotheses.
 4. The checkers and scripts were written by me with the help of an AI coding assistant (Claude).
