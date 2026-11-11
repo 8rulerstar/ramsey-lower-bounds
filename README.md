@@ -9,6 +9,7 @@ Graphs and colourings that improve lower bounds for classical Ramsey numbers, ea
 | bound | previous | graph | folder |
 |---|---|---|---|
 | R(8,19) >= 1267 | 1237 (DS1 #18) | 1266 vertices, three (8,7)-graphs glued along a 204-vertex common part; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
+| R(7,20) >= 933 | no entry in DS1 #18 (931 from known results) | 932 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
 | R(7,19) >= 919 | 908 (DS1 #18) | 918 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
 | R(7,18) >= 826 | 797 (DS1 #18) | 825 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
 | R(7,17) >= 736 | 729 (DS1 #18) | 735 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |

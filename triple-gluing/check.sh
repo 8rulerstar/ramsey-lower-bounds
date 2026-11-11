@@ -18,4 +18,5 @@ one() { # file k n1 n2 n3 s1 s2 s3 maps
 one R7_17_735.txt  7 114 114 204 6 6 7 maps_P101.txt
 one R7_18_825.txt  7 114 204 204 6 7 7 maps_P101.txt
 one R7_19_918.txt  7 204 204 204 7 7 7 maps_N102.txt
+one R7_20_932.txt  7 204 204 218 7 7 8 maps_N102_R7_20.txt
 one R8_19_1266.txt 8 218 218 218 7 7 7 maps_H204_in_G218.txt

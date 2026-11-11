@@ -1,6 +1,6 @@
-# Gluing three Ramsey graphs: R(7,17) >= 736, R(7,18) >= 826, R(7,19) >= 919, R(8,19) >= 1267
+# Gluing three Ramsey graphs: R(7,17) >= 736, R(7,18) >= 826, R(7,19) >= 919, R(7,20) >= 933, R(8,19) >= 1267
 
-Four more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >= 454). Values in the dynamic survey
+Five more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >= 454). Values in the dynamic survey
 *Small Ramsey Numbers* (S. P. Radziszowski, Electron. J. Combin. DS1, revision #18, 2026):
 
 | bound | DS1 #18 | graph | parts G_1, G_2, G_3 | common part M |
@@ -8,6 +8,7 @@ Four more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >
 | R(7,17) >= 736 | 729 | `R7_17_735.txt` | G114, G114, H204 | Paley graph P(101), m = 101 |
 | R(7,18) >= 826 | 797 | `R7_18_825.txt` | G114, H204, H204 | P(101), m = 101 |
 | R(7,19) >= 919 | 908 | `R7_19_918.txt` | three copies of the complement of H204 | neighbourhood of a vertex, m = 102 |
+| R(7,20) >= 933 | no entry (931 follows from 919 above and R(k,s+1) >= R(k,s) + 2k - 2) | `R7_20_932.txt` | complement of H204 twice, complement of G218 (a (7,8)-graph) | neighbourhood of a vertex, m = 102 |
 | R(8,19) >= 1267 | 1237 | `R8_19_1266.txt` | three copies of G218 | H204, m = 204 |
 
 G114 = complement of the 114-vertex (6,7)-graph of Exoo and Tatarevic (a (7,6)-graph); H204 = Taylor double cover of
@@ -65,11 +66,11 @@ the structured cases above, where the three graphs share a large common part.
 
 ## Verification (2026-11-11, Apple M4 Pro)
 
-`sh check.sh` (about 5 to 15 minutes) does, for each of the four graphs: (1) cuts the three parts out of the file and checks
+`sh check.sh` (about 5 to 15 minutes) does, for each of the five graphs: (1) cuts the three parts out of the file and checks
 with `verify` that each is a (k, s_i)-graph; (2) searches the whole graph for K_k with `vpar` over all roots (none);
 (3) runs `certify.py`, which checks exhaustively, on this graph, the pair conditions behind the independent-set
 argument above (every independent set maps injectively onto an independent set of the disjoint union of the parts):
-0 violations in 3,641,900 / 3,857,158 / 4,193,262 / 14,001,039 admissible pairs. So the independent-set side does not
+0 violations in 3,641,900 / 3,857,158 / 4,193,262 / 4,236,024 / 14,001,039 admissible pairs. So the independent-set side does not
 rest on the written proof. Not done: a direct branch-and-bound search for large independent sets (infeasible here).
 
 The statement and proof were also reviewed by two independent passes (a fresh proof written without reading this one,
@@ -81,4 +82,4 @@ reading by an expert is still welcome.
 ## Files
 
 `tripleglue.py` (construction from three graphs, the maps and M), `certify.py` (certificate check), `blocks.py`,
-`check.sh`, `verify.c`, `vpar.c`, the four graphs, `maps_*.txt` (the vertices x_i(j) in each part, one line per part).
+`check.sh`, `verify.c`, `vpar.c`, the five graphs, `maps_*.txt` (the vertices x_i(j) in each part, one line per part).
