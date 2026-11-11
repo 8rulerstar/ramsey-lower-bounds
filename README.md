@@ -6,10 +6,10 @@ Graphs that improve lower bounds for two-colour Ramsey numbers R(s,t), each with
 |---|---|---|---|
 | R(8,19) >= 1239 | 1237 (DS1 #18) | 1238 vertices, gluing (DS1 2.2.h) with a newer (7,8)-graph | [`r8-19`](r8-19) |
 | R(7,12) >= 420 | 417 (DS1 #18) | 419 vertices, gluing construction (DS1 2.3.h) | [`r7-12`](r7-12) |
-| R(7,16) >= 649 | 629 (DS1 #18) | 648 vertices | [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16) |
+| R(7,16) >= 649 | 629 (DS1 #18) | 648 vertices | [`r7-16`](r7-16) |
 
-New results go into this repository; the earlier R(7,16) result stays in its own repository.
+All results are in this repository. R(7,16) was first published in [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16) (2026-11-10), now archived and pointing here.
 
 Byungkun Jang, independent researcher, bkbkjang@gmail.com
 
-Code: MIT (see `LICENSE`). Input graphs from other authors keep their source; see each folder.
+Code: MIT (see `LICENSE`). `r7-16/R(4, 15) >= 163.txt` is from google-research under the Apache License 2.0 (see `r7-16/LICENSE_r7-16` and `r7-16/LICENSES`). Input graphs from other authors keep their source; see each folder.
