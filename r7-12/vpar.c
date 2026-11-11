@@ -1,5 +1,5 @@
 // Independent Ramsey certificate checker.
-// Usage: ./verify s t graph.txt
+// Search code shared with verify.c (whose usage is ./verify s t graph.txt); vpar usage is at main() below.
 //   graph.txt: first line n, then n lines of '0'/'1' (adjacency matrix).
 // Exit 0 and prints "OK" iff the graph has no clique of size s and
 // no independent set of size t (so R(s,t) > n).
