@@ -74,10 +74,10 @@ static int has_clique(int k, int complement) {
     return expand(0, P);
 }
 
-/* vpar: parallel/symmetric part of verify. Usage: ./vpar k file mode lo hi
-   mode 0: clique K_k among '1' edges, mode 1: independent k-set. Only cliques whose smallest vertex in [0,COPY)
-   lies in [lo,hi) are searched (roots v, candidates = N(v) minus {0..v-1}). Combined over lo..hi = 0..COPY this is
-   complete for graphs whose automorphisms move every vertex into [0,COPY) (checked separately). */
+/* vpar: the search of verify split by root vertex. Usage: ./vpar k file mode lo hi
+   mode 0: clique K_k among '1' edges, mode 1: independent k-set. Root v searches the sets whose smallest vertex is v
+   (candidates = neighbours of v, or non-neighbours in mode 1, above v). Run over lo..hi = 0..n (as reproduce.sh does),
+   this covers every set, with no symmetry assumption. */
 int main(int argc, char **argv) {
     if (argc != 6) { fprintf(stderr, "usage: vpar k file mode lo hi\n"); return 2; }
     int k = atoi(argv[1]), mode = atoi(argv[3]), lo = atoi(argv[4]), hi = atoi(argv[5]);

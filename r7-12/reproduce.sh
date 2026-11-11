@@ -1,6 +1,6 @@
 #!/bin/sh
 # Rebuild the 419-vertex (7,12)-graph and check it. Needs a C compiler and python3.
-# Quick part: about a minute. Independent-set part: about 30 minutes with 4 jobs (set J for the number of jobs, default 5).
+# Quick part: about a minute. Independent-set part: 25 to 40 minutes with the default 5 jobs (set J to change; progress: wc -l ind12.log).
 set -e
 cd "$(dirname "$0")"
 if command -v shasum >/dev/null 2>&1; then SHA="shasum -a 256"; else SHA=sha256sum; fi
@@ -24,5 +24,5 @@ J=${J:-5}
 seq 0 418 | xargs -n 1 -P "$J" sh -c './vpar 12 R7_12_419.txt 1 "$0" "$(($0 + 1))"' > ind12.log || { echo "FAIL: a root found an independent 12-set (see ind12.log)"; exit 1; }
 grep -c NONE ind12.log | sed 's/^/roots with NONE (expect 419): /'
 if grep -q FOUND ind12.log; then echo "FAIL: independent 12-set found"; exit 1; fi
-[ "$(grep -c NONE ind12.log)" -eq 419 ] && echo "OK: R(7,12) > 419"
+if [ "$(grep -c NONE ind12.log)" -eq 419 ]; then echo "OK: R(7,12) > 419"; else echo "FAIL: not all 419 roots finished"; exit 1; fi
 # second checker, separate implementation (slow, about 2 hours on one core): ./check3 7 12 R7_12_419.txt
