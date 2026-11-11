@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use these graphs, please cite them as below."
+title: "New lower bounds for classical Ramsey numbers: R(7,12) >= 420"
+authors:
+  - family-names: Jang
+    given-names: Byungkun
+type: dataset
+license: MIT
+repository-code: "https://github.com/8rulerstar/ramsey-lower-bounds"
+keywords: [Ramsey numbers, graph theory, lower bounds]
+date-released: 2026-11-11

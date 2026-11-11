@@ -1,6 +1,6 @@
 # New lower bounds for classical Ramsey numbers
 
-Graphs that improve lower bounds for two-colour Ramsey numbers R(s,t), each with a checker you can run.
+Graphs that improve lower bounds for two-colour Ramsey numbers R(s,t), each with a checker you can run. The bounds here come from constructions listed in the dynamic survey *Small Ramsey Numbers* (DS1), applied to newer input graphs; they are not found by computer search.
 
 | bound | previous | graph | folder |
 |---|---|---|---|
