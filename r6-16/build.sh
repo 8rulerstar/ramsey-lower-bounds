@@ -1,6 +1,6 @@
 #!/bin/sh
 # Build the 453-vertex graph: three copies of the Paley graph P(101), M = neighbourhood of vertex 0 (the 50 quadratic
-# residues), glued by tripleglue.py (theorem H). Needs python3.
+# residues), glued by tripleglue.py (triple gluing). Needs python3.
 set -e
 cd "$(dirname "$0")"
 python3 - <<'PY'

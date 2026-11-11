@@ -20,6 +20,7 @@ off = [0, Gs[0][0], Gs[0][0] + Gs[1][0]]; nG = off[2] + Gs[2][0]; assert N == nG
 types = [(0, 1), (1, 2), (0, 2)]
 xv = lambda a, j: off[a] + X[a][j]
 wv = lambda t, j: nG + t * m + j
+for a in range(3): assert len(set(X[a])) == m, 'maps must be injective'
 fib = {}                                        # vertex -> fibre index
 for j in range(m):
     for a in range(3): fib[xv(a, j)] = j
@@ -65,3 +66,4 @@ for i in range(len(elems)):
             if bad <= 5: print("VIOLATION", u, sorted(Tu), "->", img[i], "|", v, sorted(Tv), "->", img[k])
 print(f"elements {len(elems)}, pairs checked {pairs}, violations {bad}")
 print("CERTIFIED: alpha(F) <= alpha(G0)+alpha(G1)+alpha(G2)" if bad == 0 else "FAILED")
+sys.exit(0 if bad == 0 else 1)

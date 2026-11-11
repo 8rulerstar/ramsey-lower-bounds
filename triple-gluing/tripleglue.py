@@ -1,4 +1,4 @@
-"""Independent implementation of candidate theorem H (triple gluing), from the rules in notes/THEORY_A_step1.md:
+"""Triple gluing (theorem and proof: triple-gluing/README.md in this repository):
 G_1, G_2, G_3 (k,s_i)-graphs, M (K_{k-1}-free, m vertices) induced in each via maps x_a(j). New vertices w_ab(j) for
 ab in {12, 23, 13}. Edges: E1 edges of each G_a; E2 x_a(j) ~ x_b(j); E3 w_ab(j) ~ N_{G_a}(x_a(j)) and N_{G_b}(x_b(j));
 E4 w_ab(j) ~ x_c(j) (c the third index); E5 w_e(j) ~ w_f(l) iff jl in E(M) (any e, f; never for j = l).

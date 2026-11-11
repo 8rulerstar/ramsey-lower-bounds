@@ -64,7 +64,7 @@ the structured cases above, where the three graphs share a large common part.
 
 ## Verification (2026-11-11, Apple M4 Pro)
 
-`sh check.sh` (about 15 minutes) does, for each of the four graphs: (1) cuts the three parts out of the file and checks
+`sh check.sh` (about 5 to 15 minutes) does, for each of the four graphs: (1) cuts the three parts out of the file and checks
 with `verify` that each is a (k, s_i)-graph; (2) searches the whole graph for K_k with `vpar` over all roots (none);
 (3) runs `certify.py`, which checks exhaustively, on this graph, the pair conditions behind the independent-set
 argument above (every independent set maps injectively onto an independent set of the disjoint union of the parts):

@@ -66,3 +66,4 @@ for i in range(len(elems)):
             if bad <= 5: print("VIOLATION", u, sorted(Tu), "->", img[i], "|", v, sorted(Tv), "->", img[k])
 print(f"elements {len(elems)}, pairs checked {pairs}, violations {bad}")
 print("CERTIFIED: alpha(F) <= alpha(G0)+alpha(G1)+alpha(G2)" if bad == 0 else "FAILED")
+sys.exit(0 if bad == 0 else 1)

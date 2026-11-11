@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use these graphs, please cite them as below."
-title: "New lower bounds for classical Ramsey numbers: R(7,12) >= 420"
+title: "New lower bounds for classical Ramsey numbers, with graphs and checkers"
 authors:
   - family-names: Jang
     given-names: Byungkun

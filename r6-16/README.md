@@ -10,8 +10,8 @@ R(6,16) >= 434 in Table IIa [SLLL, 2002].
 ## Construction: gluing three graphs (new)
 
 The graph comes from a construction that glues **three** graphs along a common induced subgraph. It extends the
-two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h; Xu-Shao-Radziszowski, SIAM J. Discrete Math. 25
-(2011), Theorem 3), which would give n_1 + n_2 + n_3 + 2m when applied twice:
+two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h; a refinement is Theorem 3 of Xu, Shao and
+Radziszowski, SIAM J. Discrete Math. 25 (2011)), which would give n_1 + n_2 + n_3 + 2m when applied twice:
 
 > **Claim (triple gluing).** Let k >= 4. If (k, s_i)-graphs G_1, G_2, G_3 on n_i vertices share an induced subgraph M
 > on m vertices with no K_{k-1}, then there is a (k, s_1 + s_2 + s_3 - 2)-graph on n_1 + n_2 + n_3 + 3m vertices.
