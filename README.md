@@ -8,7 +8,7 @@ Graphs and colourings that improve lower bounds for classical Ramsey numbers, ea
 | R(7,19) >= 919 | 908 (DS1 #18) | 918 vertices, triple gluing | [`triple-gluing`](triple-gluing) |
 | R(7,18) >= 826 | 797 (DS1 #18) | 825 vertices, triple gluing | [`triple-gluing`](triple-gluing) |
 | R(7,17) >= 736 | 729 (DS1 #18) | 735 vertices, triple gluing | [`triple-gluing`](triple-gluing) |
-| R(6,16) >= 454 | 434 (DS1 #18) | 453 vertices, new construction gluing three Paley graphs P(101) | [`r6-16`](r6-16) |
+| R(6,16) >= 454 | 434 (DS1 #18) | 453 vertices, three Paley graphs P(101) glued along a common part (triple gluing) | [`r6-16`](r6-16) |
 | R(3,3,16) >= 293 | 291 (DS1 #18, Table XIb) | 3-colouring of K_292 (DS1 6.2.g), checked directly | [`r3-3-16`](r3-3-16) |
 | R(5,21) >= 445 | 441 (DS1 #18) | 444 vertices, gluing (XSR2 Theorem 3) with a common part found by search | [`r5-21`](r5-21) |
 | R(8,19) >= 1239 (superseded by 1267 above) | 1237 (DS1 #18) | 1238 vertices, gluing (DS1 2.2.h) with a newer (7,8)-graph | [`r8-19`](r8-19) |

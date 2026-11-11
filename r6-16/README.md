@@ -7,7 +7,7 @@
 The dynamic survey *Small Ramsey Numbers* (S. P. Radziszowski, Electron. J. Combin. DS1, revision #18, 2026) lists
 R(6,16) >= 434 in Table IIa [SLLL, 2002].
 
-## Construction: gluing three graphs (new)
+## Construction: gluing three graphs (new to my knowledge)
 
 The graph comes from a construction that glues **three** graphs along a common induced subgraph. It extends the
 two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h; a refinement is Theorem 3 of Xu, Shao and

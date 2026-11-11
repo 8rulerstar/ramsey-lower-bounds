@@ -23,7 +23,7 @@ n_1 + n_2 + n_3 + 3m vertices, so
 
 **R(k, s_1 + s_2 + s_3 - 2) >= n_1 + n_2 + n_3 + 3m + 1.**
 
-The two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h) applied twice gives n_1 + n_2 + n_3 + 2m + 1.
+The two-graph construction of Xu, Xie and Radziszowski (DS1 item 2.3.h) applied twice with the same M gives n_1 + n_2 + n_3 + 2m + 1.
 I have not found the three-graph statement in the literature; if it is known, I would be glad to learn the reference.
 
 **Construction.** F has the vertices of G_1, G_2, G_3 and new vertices w_ab(j) for ab in {12, 23, 13} and j in V(M).
@@ -42,8 +42,9 @@ I have not found the three-graph statement in the literature; if it is known, I 
   form a clique of M, hence |K| <= 1 + 1 + (k - 3). If K contains no such vertex, map each w(l) in K to x_a(l): the
   images are distinct, differ from the G_a-vertices of K (w(l) is not adjacent to x_a(l)), and together with them
   form a clique of G_a of size |K|, so |K| <= k - 1.
-- K meets exactly G_a and G_b: then K meets them in x_a(j), x_b(j). A vertex w_ac(l) or w_bc(l) cannot be adjacent to
-  both. Each w_ab(l) in K has l adjacent to j in M, so J and j form a clique of M: |J| <= k - 3 and |K| <= k - 1.
+- K meets exactly G_a and G_b: then K meets each of them in exactly one vertex, x_a(j) and x_b(j) for some j. A vertex w_ac(l) or w_bc(l) cannot be adjacent to
+  both. Each w_ab(l) in K has l adjacent to j in M (and l != j, since w_ab(j) is not adjacent to x_a(j)), so J together with j
+  is a clique of M: |J| <= k - 3 and |K| <= k - 1.
 - K meets all three: K contains x_1(j), x_2(j), x_3(j) and no W-vertex (w_ab(l) ~ x_c(j) forces l = j, but w_ab(j)
   is not adjacent to x_a(j)). |K| = 3 <= k - 1. This is where k >= 4 is used.
 
@@ -57,7 +58,7 @@ hence not to x_d(j) (E3); and x_d(j), x_d(l) for two W-vertices of I are non-adj
 (E5) and the copy of M is induced. So |I| = |I_1| + |I_2| + |I_3| <= (s_1 - 1) + (s_2 - 1) + (s_3 - 1).
 
 **Corollary.** With M = K_{k-2} (contained in every Ramsey-critical (k,s)-graph for s >= 2):
-R(k, s_1 + s_2 + s_3 - 2) >= R(k,s_1) + R(k,s_2) + R(k,s_3) + 3k - 8, in particular R(k, s + 2) >= R(k, s) + 5k - 8.
+R(k, s_1 + s_2 + s_3 - 2) >= R(k,s_1) + R(k,s_2) + R(k,s_3) + 3k - 8, in particular R(k, s + 2) >= R(k, s) + 5k - 8 for s >= 2.
 This general form is not new strength for k >= 5: Corollary 3 of Xu, Shao and Radziszowski (2011) with t = 3 gives
 R(k, s + 2) >= R(k, s) + R(3, k) + k - 2, which is equal for k = 5, 6 and larger for k >= 7. The gain of the theorem is in
 the structured cases above, where the three graphs share a large common part.
@@ -73,7 +74,7 @@ rest on the written proof. Not done: a direct branch-and-bound search for large 
 
 The statement and proof were also reviewed by two independent passes (a fresh proof written without reading this one,
 and a referee-style check), with 8,000 and 100,000 random small instances (different G_i, arbitrary embeddings of M,
-k = 4..10) computed exactly: no counterexample; removing E4, taking k = 3, or a non-induced M gives counterexamples.
+k = 4..10) computed exactly (those scripts are not included here): no counterexample; removing E4, taking k = 3, or a non-induced M gives counterexamples.
 The construction, the proof and the checks were made with the help of an AI coding assistant (Claude); a careful
 reading by an expert is still welcome.
 
