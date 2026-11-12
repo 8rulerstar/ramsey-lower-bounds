@@ -42,7 +42,7 @@ for j in range(m):
     # labels of size >=4 must not be independent
     for L in itertools.combinations(range(4),3):
         vs=[vid(c,j) for c in L]
-        assert any(F[a][b] for a in vs for b in vs), "independent 4-set inside a fibre"
+        assert any(F[a][b] for a in vs for b in vs), "independent 3-set inside a fibre"
 pairs=0; viol=0
 for a in range(len(elems)):
     vma,nma,ia,ka=elems[a]

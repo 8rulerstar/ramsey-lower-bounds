@@ -25,7 +25,8 @@ W_3 of M. Vertices of M (in G_a or in W_c) have an index j; we write (j, c). The
 **No K_{k+1}.** For a clique K let K_j be the set of positions of its vertices with index j. Inside an index only neighbour
 positions are adjacent, so K_j is one position, {0,1} or {2,3}. Vertices with different indices lie in the same or in
 non-neighbour positions and have adjacent indices. If some K_j = {0,1}, every other indexed vertex is at position 2 or 3;
-two such pairs {0,1}, {2,3} leave no room for a third index, and then |K| = 4 <= k. If K has no private vertex, the indices
+two such pairs {0,1}, {2,3} leave no room for a third index, and then |K| = 4 <= k. Likewise at most one index carries
+the pair {2,3}. If K has no private vertex, the indices
 form a clique of M (so at most k-1 of them, M being induced in G_1) and at most one index carries a pair: |K| <= k.
 If K has private vertices, they lie in one side G_c, the other side position has no vertex of K (its vertices are not
 adjacent to private vertices of G_c), and mapping each indexed vertex (l, c') to x_c(l) (twin rule) sends K onto a clique
@@ -55,7 +56,8 @@ M = the Paley graph P(101), induced in both (`maps_P101_H204_G114.txt`: line a g
 - No K_8: `vpar 8 R8_12_520.txt 0 0 520` (all roots, about 1.3 x 10^7 nodes).
 - Independent side: `python3 certifyD1.py H204.txt G114.txt maps_P101_H204_G114.txt R8_12_520.txt` checks on this graph,
   for every pair of elements that can lie together in an independent set, the conditions of the assignment above
-  (924 elements, 227,509 admissible pairs, 0 violations), so alpha <= 6 + 5 = 11 does not rest on the written proof.
+  (924 elements, 227,509 admissible pairs, 0 violations), so alpha <= 6 + 5 = 11 does not rest on the written proof (the certificate uses the same assignment as the proof and
+alpha(G_i) from `verify`).
 
 Found with the help of an AI coding assistant (Claude); no expert has read the proof yet. I have not found theorem D1
 in the literature (DS1 rev. 18 and the papers listed in `../seven-copies`).

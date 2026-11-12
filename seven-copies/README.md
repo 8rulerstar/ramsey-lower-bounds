@@ -75,7 +75,7 @@ Hence |I| <= alpha(G_1) + alpha(G_2) + alpha(G_3) <= (s_1 - 1) + (s_2 - 1) + (s_
   independent set (private vertices and fibre states (j, L) with L independent in F), that the assignment in the proof
   sends them to distinct non-adjacent vertices of the same G_i: R(7,16): 2,828 elements, 2,050,300 admissible pairs;
   R(8,19): 5,712 elements, 8,368,080 pairs; 0 violations each, about 2 and 4 seconds. So the independent side does not
-  rest on the written proof.
+  rest on the written proof (the check uses the same assignment as the proof and alpha(G_i) from `verify`).
 - Random exact computation (separate code, not included): about 2.29 million small instances with different G_i, arbitrary
   M and embeddings and arbitrary side positions, no counterexample; removing a matching edge between neighbouring
   positions or adding a twin edge there, allowing k = 3 or a non-induced M all give counterexamples.

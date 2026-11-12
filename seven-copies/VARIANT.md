@@ -66,7 +66,7 @@ The bound 4 in (b) is where w >= 3 matters: for w = 2, {0,5} and {3,4} on the tw
   8 vertices give omega(F) = max(w+1, 4) and alpha(F) = 3a exactly.
 - Exact computation (separate code): F from Paley graphs P(13), P(17) (119 vertices) and P(29) (203 vertices, checked
   with `verify`) has exactly omega = w + 1 and alpha = 3a.
-- `sh check.sh` rebuilds `R7_16_707_variant.txt` from P(101), checks the facts, searches for K_7 over all 707 roots (none) and for
+- `sh check_variant.sh` rebuilds `R7_16_707_variant.txt` from P(101), checks the facts, searches for K_7 over all 707 roots (none) and for
   independent 16-sets. Symmetry used in the last step: (j, c) -> (j+1 mod 101, c) is an automorphism of F (checked
   directly on the file), so every independent set has a translate whose smallest vertex lies in fibre 0, and roots 0..6
   cover all cases. Status of this search: see the commit history; a full search over all roots without the symmetry is
