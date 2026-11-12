@@ -33,4 +33,4 @@ while True:
 Q = sorted(tuple(sorted(m)) for m in Qset())
 d, kappa = gadget_params(r, T, Qset())
 print("r", r, "|E(T)|", len(T), "iters", it, "|Q|", len(Q), "d", d, "kappa", kappa)
-open(f"Q{r}_mine.txt", "w").write(repr(Q))
+open(f"Q{r}_seed{sys.argv[2]}.txt", "w").write(repr(Q))

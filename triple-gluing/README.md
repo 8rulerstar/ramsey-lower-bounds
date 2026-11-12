@@ -68,7 +68,7 @@ the structured cases above, where the three graphs share a large common part.
 
 This section does not raise any entry of the survey tables; it records how far the idea goes. With r graphs the
 second parameter grows to s_1 + ... + s_r - (r - 1), so for r >= 4 it is large and other known bounds for those entries
-are much higher. Example: R(7,23) >= 1253 follows from DS1 rev. 18 item 2.3.i with R(4,22) >= 314, far above what
+are much higher. Example: R(7,23) >= 1253 follows from DS1 rev. 18 item 2.3.i with R(4,22) >= 314 (unpublished, as listed there), far above what
 theorem B gives from the available (7,s)-graphs.
 
 **Gadget.** T is a simple graph on {1..r} (its edges are the "types"), and Q is a set of pairs {e, f} of disjoint edges of T.
@@ -86,7 +86,7 @@ then there is a (k, s_1 + ... + s_r - (r - 1))-graph on n_1 + ... + n_r + |E(T)|
 
 **Construction.** New vertices w_e(j) for e in E(T), j in V(M); the fibre of j is {x_a(j)} together with {w_e(j)}, and w(j) means some w_e(j).
 - (E1) the edges of each G_a;
-- (E2) x_a(j) ~ x_b(j) iff ab is in E(T) (joining all pairs a, b also works, then kappa is taken over all subsets P of {1..r});
+- (E2) x_a(j) ~ x_b(j) iff ab is in E(T);
 - (E3) w_e(j) ~ every neighbour of x_a(j) in G_a, for each a in e (not x_a(j) itself);
 - (E4) w_e(j) ~ x_c(j) for c not in e;
 - (E5) for j != l: w_e(j) ~ w_f(l) iff jl is in E(M) and e, f share an end;
@@ -110,7 +110,7 @@ coefficient found by iterating 2.3.h and the triple gluing with unions of copies
 searched with omega(M) = 2 and at most 6 graphs; not a proof that nothing better exists). Two caveats:
 - For a specific M the earlier methods can do a little better. With M = K_{k-2}, three uses of 2.3.h on r = 4 reach
   5m - 2 (`caveat.py`), so theorem B gains only 2 vertices there.
-- With d = 1, T contains no K_4 (on a K_4 there is only one Q-pair, and removing one of its edges leaves 5 Q-independent
+- With d = 1, T contains no K_4 (on a K_4 there is at most one Q-pair, and removing one of its edges leaves 5 Q-independent
   edges on 4 vertices). So |E(T)| <= floor(r^2/3) by Turan's theorem; r = 4..8 attain it.
 
 **Proof, independent sets.** Let I be independent. For each j let A_j = {a : x_a(j) in I}, B_j = {e : w_e(j) in I}.
@@ -143,9 +143,10 @@ x_a(j) x_b(j) with ab in E(T). Note: w_e(l) ~ y in G_a means (a in e and y ~ x_a
 - `python3 testB.py B4 SECONDS SEED` and `python3 testB.py B7 SECONDS SEED Q7_mine.txt` (B5..B8 likewise) build F from
   random G_a, M and embeddings, set k - 1 to the largest of omega(G_a), kappa and the bounds in (H2), (H3), and compute
   omega(F), alpha(F) exactly. Runs stop after SECONDS, so counts vary by machine. Our runs
-  (about 1.2 million instances for B4, 0.5 million B5, 0.35 million B6, 0.27 million B7, 0.08 million B8, with the
-  argument `big` forcing omega(M) = k - 2): no violation, and omega(F) was always equal to k - 1. With `noQ` (dropping E6) the independence bound fails at once, so the checker detects errors.
-- `python3 findQ.py r SEED` finds Q for r = 4..8 with (Q2) and d = 1.
+  (about 1.2 million instances for B4, 0.5 million B5, 0.35 million B6, 0.27 million B7, 0.08 million B8, including runs with
+  the argument `big`, which forces omega(M) = k - 2): no violation, and omega(F) was always equal to k - 1. With `noQ` (dropping E6) the independence bound fails at once, so the checker detects errors.
+- `python3 findQ.py r SEED` finds Q for r = 4..8 with (Q2) and d = 1 and writes `Q{r}_seed{SEED}.txt`; seed 1 gives the
+  files `Q{r}_mine.txt` used above.
 - `python3 baseline.py 2 6 6` prints 4m, 6m, 9m for r = 4, 5, 6; `python3 caveat.py 60` checks the 5m - 2 case.
 
 These scripts were written without reusing the code of an earlier referee-style check, which found the same values.
