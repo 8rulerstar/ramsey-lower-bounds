@@ -18,7 +18,8 @@ S_2, S_3, and S_0 + S_2 + (S_1 n S_3) and S_1 + S_3 + (S_0 n S_2) are independen
 - `python3 check_structure.py`: the first 816 vertices are exactly the layer graph of `H204.txt`; the only edges between
   G816 and C133 are the 104 matching edges x_G(i) x_C(i); each new vertex w_i is a twin of x_G(i) in G816 and of x_C(i)
   in C133 and adjacent to neither; M is induced in both parts (0 violations).
-- `verify 8 6 C133.txt`: C133 is an (8,6)-graph. `verify 8 7 H204.txt` and the found independent 6-set give alpha(H204) = 6.
+- `sh check.sh` runs all checks below.
+- `verify 8 6 C133.txt`: C133 is an (8,6)-graph. `verify 8 7 H204.txt`: alpha(H204) <= 6 (only the upper bound is needed).
 - No K_8: `vpar 8 R8_18_1053.txt 0 0 1053` (all roots, about 2 x 10^8 nodes).
 - No independent 18-set: map each w_i in I to x_G(i) if x_G(i) is not in I, else to x_C(i) (x_G(i), x_C(i) are adjacent,
   so not both are in I); the image is independent in G816 and C133, so alpha <= 12 + 5 = 17. This rests on the proof of

@@ -7,8 +7,8 @@ omega(F) = max(w+1, 4) for w >= 2, and alpha(F) = 3a. Hence for k >= 4 and s >= 
 
 (take G a (k,s)-graph on R(k,s)-1 vertices: omega(F) <= max(k, 4) = k, alpha(F) <= 3(s-1)).
 
-The closest results I know are DS1 2.3.i (Xu, Xie, Exoo, Radziszowski: R(2k-1, l) >= 4R(k, l-1) - 3, four copies,
-independence number doubled) and DS1 2.3.c (Chung, Cleve, Dagum: R(3, 4k+1) >= 6R(3, k+1) - 5, triangle-free only).
+The closest results I know are DS1 2.3.i (Xu, Xie, Exoo, Radziszowski: R(2k-1, l) >= 4R(k, l-1) - 3, Electron. J. Combin. 11
+(2004) #R35; in complement form four copies with the independence number doubled) and DS1 2.3.c (Chung, Cleve, Dagum: R(3, 4k+1) >= 6R(3, k+1) - 5, triangle-free only).
 I have not found this statement in the literature (DS1 rev. 18 sections 2.3 and 6.2, and the papers listed at the end);
 if it is known, I would be glad to learn the reference.
 
@@ -60,8 +60,10 @@ The bound 4 in (b) is where w >= 3 matters: for w = 2 the theorem gives omega(F)
 ## Checks
 
 - `tables.py`: the finite facts (T1) to (T3) and the clique-side case (b).
+- Exhaustive check (separate C code): all 2,097,152 labelled graphs on at most 7 vertices and 20,000 random graphs on
+  8 vertices give omega(F) = max(w+1, 4) and alpha(F) = 3a exactly.
 - Exact computation (separate code): F from Paley graphs P(13), P(17) (119 vertices) and P(29) (203 vertices, checked
-  with `verify`) has exactly omega = w + 1 and alpha = 3a; all 2,097,152 labelled graphs on 7 vertices give no violation.
+  with `verify`) has exactly omega = w + 1 and alpha = 3a.
 - `sh check.sh` rebuilds `R7_16_707.txt` from P(101), checks the facts, searches for K_7 over all 707 roots (none) and for
   independent 16-sets. Symmetry used in the last step: (j, c) -> (j+1 mod 101, c) is an automorphism of F (checked
   directly on the file), so every independent set has a translate whose smallest vertex lies in fibre 0, and roots 0..6
@@ -71,7 +73,8 @@ The bound 4 in (b) is where w >= 3 matters: for w = 2 the theorem gives omega(F)
 The construction was found, and the proof written, with the help of an AI coding assistant (Claude); I checked the
 finite facts and the argument, but no expert has read the proof yet.
 
-Literature read in full without finding this statement: DS1 rev. 18 (sections 2.3, 6.1, 6.2); Xu, Xie, Radziszowski,
+Literature read in full without finding this statement: DS1 rev. 18 (sections 2.3, 6.1, 6.2); Xu, Xie, Exoo,
+Radziszowski, Electron. J. Combin. 11 (2004) #R35; Xu, Xie, Radziszowski,
 J. Graph Theory 47 (2004); Xu, Shao, Radziszowski, SIAM J. Discrete Math. 25 (2011); Xu and Radziszowski's survey
 (sur14) and slides (slides68); Rowley, Australas. J. Combin. 68 (2017); Zhu, Xu, Radziszowski (arXiv 1507.01133);
 Morris (arXiv 2601.05221). Not read in full: Chung, Cleve, Dagum, J. Combin. Theory B 57 (1993).
