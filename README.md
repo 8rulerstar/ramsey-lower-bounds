@@ -2,34 +2,88 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24128875.svg)](https://doi.org/10.5281/zenodo.24128875)
 
-Archived snapshots: Zenodo, all versions DOI [10.5281/zenodo.24128875](https://doi.org/10.5281/zenodo.24128875); v1.0 of 2026-11-11 is [10.5281/zenodo.24128876](https://doi.org/10.5281/zenodo.24128876). v1.1 of 2026-11-12 (seven-copy theorem, R(7,16) >= 708, R(8,19) >= 1429, R(8,18) >= 1054, R(7,18) >= 827) is [10.5281/zenodo.24149479](https://doi.org/10.5281/zenodo.24149479). v1.2.1 of 2026-11-12 (theorems D and D1 with certificates, R(8,12) >= 521) is [10.5281/zenodo.24150638](https://doi.org/10.5281/zenodo.24150638). v1.3 of 2026-11-12 (theorem D12, R(8,25) >= 2449) is [10.5281/zenodo.24153490](https://doi.org/10.5281/zenodo.24153490).
+Graphs and colourings that improve lower bounds for classical Ramsey numbers, with the constructions, their proofs and
+checkers you can run. Comparison values are from the dynamic survey *Small Ramsey Numbers* (S. P. Radziszowski, DS1
+rev. 18, 2026) or, where newer, the google-research ramsey_number_bounds repository.
 
-Graphs and colourings that improve lower bounds for classical Ramsey numbers, each with a checker you can run. The clique side is always checked by search. The table says how the independent side is established: by direct search, by an exhaustive certificate check on the graph (the triple-gluing rows: a program verifies the conditions of the proof on that graph), or by a published theorem. Most bounds here come from constructions listed in the dynamic survey *Small Ramsey Numbers* (DS1), applied to newer input graphs. R(6,16) and the `triple-gluing` bounds use a construction that glues three graphs along a common induced subgraph (theorem and proof in [`triple-gluing`](triple-gluing)); I have not found it in the literature. The [`seven-copies`](seven-copies) and [`r8-12`](r8-12) bounds use a new construction that glues graphs along a common induced subgraph and raises the clique number by one (theorems D and D1; in particular R(k+1, 3s-2) >= 7R(k,s) - 6), also not found in the literature.
+## Main results
+
+- **R(7,16) >= 708** (DS1 rev. 18: 629) and **R(8,19) >= 1429** (1237), from theorem D (heptagon gluing).
+- **R(8,12) >= 521** (google-research: 511), from theorem D1.
+- **R(6,16) >= 454** (434), **R(7,17) >= 736** (729), **R(7,19) >= 919** (908), from the triple gluing (theorem H).
+- In cells the survey does not list: **R(8,25) >= 2449** (2049 is the best value I could derive from published results),
+  from theorem D12; **R(7,20) >= 933** (931 from known results).
+
+## Constructions
+
+All of them glue known Ramsey graphs along a common induced subgraph M. I have not found theorems H, P, D, D1 and D12 in
+the literature (the search is described in each folder); if any is known, I would be glad to learn the reference. Each
+folder has the statement and a written proof; the proofs have not yet been read by an expert.
+
+| name | statement | where |
+|---|---|---|
+| H (triple gluing) | R(k, s_1+s_2+s_3-2) >= n_1+n_2+n_3+3m+1, M with no K_{k-1}, k >= 4 | [`triple-gluing`](triple-gluing) |
+| P | theorem H with a different common part for each pair of graphs | [`triple-gluing`](triple-gluing), section "Different common parts" |
+| B | r graphs instead of 3 (improves no table entry) | [`triple-gluing`](triple-gluing), section "Generalization to r graphs" |
+| D1 | R(k+1, p+q-1) >= n_1+n_2+2m+1, any common M, k >= 4 (contains DS1 2.3.i) | [`r8-12`](r8-12) |
+| D | R(k+1, s_1+s_2+s_3-2) >= n_1+n_2+n_3+4m+1, any common M, k >= 4; in particular R(k+1, 3s-2) >= 7R(k,s) - 6 | [`seven-copies`](seven-copies) |
+| D12 | R(k+1, 4s-3) >= 12R(k,s) - 11, k >= 4 (copies of one graph) | [`twelve-copies`](twelve-copies) |
+
+## Current bounds
 
 | bound | previous | graph | folder |
 |---|---|---|---|
-| R(8,25) >= 2449 | no entry in DS1 #18 (2049 from published results) | 2448 vertices, theorem D12: twelve copies of the 204-vertex (7,7)-graph; no K_8 by search, independent side by an exhaustive certificate check on the graph; other cells outside the tables in `twelve-copies/offtable.md` | [`twelve-copies`](twelve-copies) |
-| R(8,12) >= 521 | 511 (google-research 2026) | 520 vertices, theorem D1: a (7,7)- and a (7,6)-graph glued along P(101) with k raised by one; no K_8 by search, independent side by an exhaustive certificate check on the graph | [`r8-12`](r8-12) |
-| R(8,19) >= 1429 | 1237 (DS1 #18) | 1428 vertices, heptagon gluing (theorem D) of three copies of the 204-vertex (7,7)-graph; no K_8 by search over all roots, independent side by an exhaustive certificate check on the graph | [`seven-copies`](seven-copies) |
-| R(7,16) >= 708 | 629 (DS1 #18) | 707 vertices, heptagon gluing (theorem D) of three copies of P(101); no K_7 by search, independent side by an exhaustive certificate check on the graph | [`seven-copies`](seven-copies) |
-| R(8,18) >= 1054 | 1049 (DS1 #18), 1052 (google-research 2026-10-22) | 1053 vertices, DS1 2.3.h with a 104-vertex common part; independent side by a short proof | [`r8-18`](r8-18) |
-| R(7,18) >= 827 | 797 (DS1 #18) | 826 vertices, triple gluing with different common parts per pair; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(8,19) >= 1267 (superseded by 1429 above) | 1237 (DS1 #18) | 1266 vertices, three (8,7)-graphs glued along a 204-vertex common part; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(7,20) >= 933 | no entry in DS1 #18 (931 from known results) | 932 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(7,19) >= 919 | 908 (DS1 #18) | 918 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(7,18) >= 826 (superseded by 827 above) | 797 (DS1 #18) | 825 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(7,17) >= 736 | 729 (DS1 #18) | 735 vertices, triple gluing; independent side by an exhaustive certificate check on the graph | [`triple-gluing`](triple-gluing) |
-| R(6,16) >= 454 | 434 (DS1 #18) | 453 vertices, three Paley graphs P(101) glued along a common part (triple gluing); independent side by an exhaustive certificate check on the graph | [`r6-16`](r6-16) |
-| R(3,3,16) >= 293 | 291 (DS1 #18, Table XIb) | 3-colouring of K_292 (DS1 6.2.g), all three colours checked by direct search | [`r3-3-16`](r3-3-16) |
-| R(5,21) >= 445 | 441 (DS1 #18) | 444 vertices, gluing (XSR2 Theorem 3) with a common part found by search; independent side by the theorem | [`r5-21`](r5-21) |
-| R(8,19) >= 1239 (superseded by 1267 above) | 1237 (DS1 #18) | 1238 vertices, gluing (DS1 2.2.h) with a newer (7,8)-graph; independent side by the theorem | [`r8-19`](r8-19) |
-| R(7,12) >= 420 | 417 (DS1 #18) | 419 vertices, gluing construction (DS1 2.3.h); independent side by direct search | [`r7-12`](r7-12) |
-| R(7,16) >= 649 (superseded by 708 above) | 629 (DS1 #18) | 648 vertices; independent side by direct search | [`r7-16`](r7-16) |
+| R(8,25) >= 2449 | not in DS1 rev. 18 (2049, best value I could derive) | 2448 vertices, theorem D12, twelve copies of the 204-vertex (7,7)-graph H204 | [`twelve-copies`](twelve-copies) |
+| R(8,19) >= 1429 | 1237 | 1428 vertices, theorem D, three copies of H204c (the complement of H204) | [`seven-copies`](seven-copies) |
+| R(7,16) >= 708 | 629 | 707 vertices, theorem D, three copies of P(101) | [`seven-copies`](seven-copies) |
+| R(8,12) >= 521 | 511 (google-research) | 520 vertices, theorem D1, H204 and a (7,6)-graph sharing P(101) | [`r8-12`](r8-12) |
+| R(8,18) >= 1054 | 1049; 1052 (google-research) | 1053 vertices, DS1 2.3.h with a 104-vertex common part; independent side from the proof that the 816-vertex part has alpha <= 12 | [`r8-18`](r8-18) |
+| R(7,20) >= 933 | not in DS1 rev. 18 (931 from known results) | 932 vertices, theorem H | [`triple-gluing`](triple-gluing) |
+| R(7,19) >= 919 | 908 | 918 vertices, theorem H | [`triple-gluing`](triple-gluing) |
+| R(7,18) >= 827 | 797 | 826 vertices, theorem P | [`triple-gluing`](triple-gluing) |
+| R(7,17) >= 736 | 729 | 735 vertices, theorem H | [`triple-gluing`](triple-gluing) |
+| R(6,16) >= 454 | 434 | 453 vertices, theorem H, three copies of P(101) | [`r6-16`](r6-16) |
+| R(5,21) >= 445 | 441 | 444 vertices, XSR2 Theorem 3 with a common part found by search; independent side by that published theorem | [`r5-21`](r5-21) |
+| R(7,12) >= 420 | 417 | 419 vertices, DS1 2.3.h with a newer input graph; independent side by direct search | [`r7-12`](r7-12) |
+| R(3,3,16) >= 293 | 291 (Table XIb) | 3-colouring of K_292 (DS1 6.2.g), all three colours checked by direct search | [`r3-3-16`](r3-3-16) |
 
-All results are in this repository. R(7,16) was first published in [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16) (2026-11-10), now archived and pointing here.
+## How the results are checked
 
-Byungkun Jang, independent researcher, bkbkjang@gmail.com
+For every graph the clique side (no K_k) is checked by exhaustive search (`vpar`, all roots). For the graphs from
+theorems H, P, D, D1 and D12 the independent side is checked, in addition to the written proof, by an exhaustive
+certificate on the graph file: a program verifies, for every pair of elements that can lie together in an independent set,
+the conditions of the proof's assignment, so the bound on the independence number does not rest on the written argument
+(it uses the independence numbers of the input graphs, checked by `verify`). Each of these folders has a `check.sh` that
+rebuilds the graph from its inputs and runs all checks. To start reading: [`seven-copies`](seven-copies), then
+[`r8-12`](r8-12) and [`triple-gluing`](triple-gluing).
 
-The work was done with the help of an AI coding assistant (Claude); see each folder.
+## Citing
 
-Code: MIT. Documentation and the graphs constructed here: CC BY 4.0, please credit Byungkun Jang and cite the Zenodo DOI (see `LICENSE`, `CITATION.cff`). `r7-16/R(4, 15) >= 163.txt` and `r3-3-16/R3_15_73_input.txt` come from google-research under the Apache License 2.0 (copy in `r7-16/LICENSES/Apache-2.0.txt`). Graph files built from other authors' graphs contain those graphs (see `LICENSE`). Input graphs from other authors keep their source; see each folder.
+Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https://doi.org/10.5281/zenodo.24128875)
+(see `CITATION.cff`). Versions:
+- v1.0 (2026-11-11), [10.5281/zenodo.24128876](https://doi.org/10.5281/zenodo.24128876): triple gluing and the first bounds.
+- v1.1 (2026-11-12), [10.5281/zenodo.24149479](https://doi.org/10.5281/zenodo.24149479): R(7,16) >= 708, R(8,19) >= 1429, R(8,18) >= 1054, R(7,18) >= 827.
+- v1.2.1 (2026-11-12), [10.5281/zenodo.24150638](https://doi.org/10.5281/zenodo.24150638): theorems D and D1 with certificates, R(8,12) >= 521.
+- v1.3 (2026-11-12), [10.5281/zenodo.24153490](https://doi.org/10.5281/zenodo.24153490): theorem D12, R(8,25) >= 2449.
+
+<details>
+<summary>Earlier bounds, now superseded</summary>
+
+| bound | superseded by | folder |
+|---|---|---|
+| R(8,19) >= 1239 | 1267, then 1429 | [`r8-19`](r8-19) |
+| R(8,19) >= 1267 | 1429 | [`triple-gluing`](triple-gluing) |
+| R(7,18) >= 826 | 827 | [`triple-gluing`](triple-gluing) |
+| R(7,16) >= 649 | 708 | [`r7-16`](r7-16) (first published in [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16), 2026-11-10) |
+
+</details>
+
+## Author, AI use and license
+
+Byungkun Jang, independent researcher, bkbkjang@gmail.com. The searches, constructions, proofs and checks were made with
+the help of an AI coding assistant (Claude); see each folder.
+
+Code: MIT. Documentation and the graphs constructed here: CC BY 4.0, please credit Byungkun Jang and cite the Zenodo DOI
+(see `LICENSE`, `CITATION.cff`). `r7-16/R(4, 15) >= 163.txt` and `r3-3-16/R3_15_73_input.txt` come from google-research
+under the Apache License 2.0 (copy in `r7-16/LICENSES/Apache-2.0.txt`). Graph files built from other authors' graphs
+contain those graphs (see `LICENSE`).

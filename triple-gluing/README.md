@@ -1,4 +1,4 @@
-# Gluing three Ramsey graphs: R(7,17) >= 736, R(7,18) >= 826, R(7,19) >= 919, R(7,20) >= 933, R(8,19) >= 1267
+# Gluing three Ramsey graphs (theorem H): R(7,17) >= 736, R(7,18) >= 827, R(7,19) >= 919, R(7,20) >= 933
 
 Five more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >= 454). Values in the dynamic survey
 *Small Ramsey Numbers* (S. P. Radziszowski, Electron. J. Combin. DS1, revision #18, 2026):
@@ -6,17 +6,17 @@ Five more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >
 | bound | DS1 #18 | graph | parts G_1, G_2, G_3 | common part M |
 |---|---|---|---|---|
 | R(7,17) >= 736 | 729 | `R7_17_735.txt` | G114, G114, H204 | Paley graph P(101), m = 101 |
-| R(7,18) >= 826 | 797 | `R7_18_825.txt` | G114, H204, H204 | P(101), m = 101 |
+| R(7,18) >= 826 (superseded by 827, next row) | 797 | `R7_18_825.txt` | G114, H204, H204 | P(101), m = 101 |
 | R(7,18) >= 827 | 797 | `R7_18_826.txt` | the same | P(101) for two pairs, P(101) plus one vertex for the third (theorem P below) |
 | R(7,19) >= 919 | 908 | `R7_19_918.txt` | three copies of the complement of H204 | neighbourhood of a vertex, m = 102 |
 | R(7,20) >= 933 | no entry (931 follows from 919 above and R(k,s+1) >= R(k,s) + 2k - 2) | `R7_20_932.txt` | complement of H204 twice, complement of G218 (a (7,8)-graph) | neighbourhood of a vertex, m = 102 |
-| R(8,19) >= 1267 | 1237 | `R8_19_1266.txt` | three copies of G218 | H204, m = 204 |
+| R(8,19) >= 1267 (superseded by 1429, `../seven-copies`) | 1237 | `R8_19_1266.txt` | three copies of G218 | H204, m = 204 |
 
 G114 = complement of the 114-vertex (6,7)-graph of Exoo and Tatarevic (a (7,6)-graph); H204 = Taylor double cover of
 P(101) (a (7,7)-graph, as is its complement); G218 = Tatarevic's 218-vertex (8,7)-graph (see `../r7-12`, `../r8-19`
 for sources). In each file the first n_1, next n_2, next n_3 vertices are the three parts, followed by 3m new vertices.
 
-## Theorem (triple gluing)
+## Theorem H (triple gluing)
 
 Let k >= 4. For i = 1, 2, 3 let G_i be a (k, s_i)-graph on n_i vertices (no K_k, no independent set of size s_i). Let M
 be a graph on m vertices with no K_{k-1}, and let x_i : V(M) -> V(G_i) be injective maps whose images induce copies of

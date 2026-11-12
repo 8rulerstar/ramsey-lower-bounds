@@ -1,5 +1,7 @@
 # A (7,16)-graph on 648 vertices: R(7,16) >= 649
 
+**Superseded:** R(7,16) >= 708 by theorem D, see [`../seven-copies`](../seven-copies).
+
 The dynamic survey *Small Ramsey Numbers* (S. P. Radziszowski, Electron. J. Combin. DS1, revision #18, 2026) lists R(7,16) >= 629, from item 2.3.i:
 
 > R(2k-1, l) >= 4R(k, l-1) - 3 for k >= 2, l >= 5
