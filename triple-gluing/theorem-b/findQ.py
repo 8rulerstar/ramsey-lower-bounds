@@ -1,5 +1,5 @@
 # Independent search for Q on T = complete multipartite graph with (Q2) and d <= 1 (at most one Q-pair per 4-set).
-# usage: findQ.py r seed  -> writes Q{r}_mine.txt
+# usage: findQ.py r seed  -> writes Q{r}_seed{seed}.txt (seed 1 reproduces Q{r}_mine.txt)
 import sys, random, itertools
 from core import q2_violation, gadget_params
 r = int(sys.argv[1]); rng = random.Random(int(sys.argv[2]))

@@ -110,8 +110,8 @@ coefficient found by iterating 2.3.h and the triple gluing with unions of copies
 searched with omega(M) = 2 and at most 6 graphs; not a proof that nothing better exists). Two caveats:
 - For a specific M the earlier methods can do a little better. With M = K_{k-2}, three uses of 2.3.h on r = 4 reach
   5m - 2 (`caveat.py`), so theorem B gains only 2 vertices there.
-- With d = 1, T contains no K_4 (on a K_4 there is at most one Q-pair, and removing one of its edges leaves 5 Q-independent
-  edges on 4 vertices). So |E(T)| <= floor(r^2/3) by Turan's theorem; r = 4..8 attain it.
+- With d = 1, T contains no K_4 (on a K_4 there is at most one Q-pair; removing an edge of that pair, or none if there is no pair, leaves at least 5
+  Q-independent edges on 4 vertices). So |E(T)| <= floor(r^2/3) by Turan's theorem; r = 4..8 attain it.
 
 **Proof, independent sets.** Let I be independent. For each j let A_j = {a : x_a(j) in I}, B_j = {e : w_e(j) in I}.
 B_j is Q-independent (E6), A_j is T-independent (E2), and every type in B_j contains all of A_j (E4); so if |A_j| >= 2
@@ -128,8 +128,9 @@ non-adjacent. Hence |I| <= sum (s_d - 1).
 x_a(j) x_b(j) with ab in E(T). Note: w_e(l) ~ y in G_a means (a in e and y ~ x_a(l)) or (a not in e and y = x_a(l)).
 - P empty: the fibres used by K form a clique J of M; inside a fibre the types form a Q-clique C_j, and types in
   different fibres share an end. If some |C_j| >= 3, a type from another fibre cannot meet three disjoint edges, so K
-  lies in one fibre and |K| <= kappa. If |C_j| = |C_l| = 2 with j != l, the four types are the perfect matchings of one 4-set;
-  at most d fibres have two. So |K| <= |J| + min(|J|, d) <= k - 1 (H3).
+  lies in one fibre and |K| <= kappa. If |C_j| = |C_l| = 2 with j != l, the two pairs {C_j, C_l} are two different perfect matchings of one 4-set (they cannot be the same Q-pair, since then
+  types in different fibres would be disjoint and non-adjacent by E5), so all such fibres use different Q-pairs on one
+  4-set and at most d fibres have two. So |K| <= |J| + min(|J|, d) <= k - 1 (H3).
 - |P| >= 2: K meets the union of the G_a in {x_a(j0) : a in P} and P is a clique of T. A vertex w_e(l) of K has either l = j0 and e disjoint
   from P, or l != j0, e = P and l adjacent to j0 in M. The two kinds are non-adjacent (disjoint types, E5). So
   |K| <= kappa, or |K| <= 2 + (omega(M) - 1) <= k - 1 (H2).
@@ -138,6 +139,9 @@ x_a(j) x_b(j) with ab in E(T). Note: w_e(l) ~ y in G_a means (a in e and y ~ x_a
   containing a cannot meet two disjoint ones, so |K| = 1 + |C| <= kappa; if |C| = 1, |K| <= 2 + omega(M) - 1 <= k - 1.
 - P = {a} and every w in K has a type containing a: one per fibre; w(l) -> x_a(l) is injective, misses K inside G_a
   (w(l) is not adjacent to x_a(l)) and keeps adjacency (E3, E5, M induced), so K becomes a clique of G_a: |K| <= k - 1.
+
+All gadgets in the table have d <= 1, where (H3) follows from (H2); the case d >= 2 of the proof is not exercised by
+the checks below.
 
 **Checks** (run inside `theorem-b/`, plain Python 3 with networkx; not a substitute for a careful reading of the proof).
 - `python3 testB.py B4 SECONDS SEED` and `python3 testB.py B7 SECONDS SEED Q7_mine.txt` (B5..B8 likewise) build F from
