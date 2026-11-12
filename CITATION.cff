@@ -5,7 +5,7 @@ authors:
   - family-names: Jang
     given-names: Byungkun
 type: dataset
-license: MIT
+license: ["MIT", "CC-BY-4.0"]
 repository-code: "https://github.com/8rulerstar/ramsey-lower-bounds"
 keywords: [Ramsey numbers, graph theory, lower bounds]
 date-released: 2026-11-12
