@@ -1,5 +1,5 @@
 #!/bin/sh
-# Check the four graphs: (1) each of the three glued parts is a (k,s_i)-graph (verify), (2) the whole graph has no
+# Check the six graphs: (1) each of the three glued parts is a (k,s_i)-graph (verify), (2) the whole graph has no
 # K_k (vpar, all roots), (3) certify.py: alpha(F) <= alpha(G_1) + alpha(G_2) + alpha(G_3) <= s_1 + s_2 + s_3 - 3.
 # Needs a C compiler and python3. About 5 to 15 minutes (the K8 search on 1266 vertices and the last certificate dominate).
 set -e
@@ -20,3 +20,8 @@ one R7_18_825.txt  7 114 204 204 6 7 7 maps_P101.txt
 one R7_19_918.txt  7 204 204 204 7 7 7 maps_N102.txt
 one R7_20_932.txt  7 204 204 218 7 7 8 maps_N102_R7_20.txt
 one R8_19_1266.txt 8 218 218 218 7 7 7 maps_H204_in_G218.txt
+# R(7,18) >= 827 (theorem P): parts G114c, H204, H204 with different common parts per pair; certificate certifyP.py.
+echo "== R7_18_826.txt: 826 vertices, claim: no K7, no independent set of size 18"
+./verify 7 6 G114c.txt; ./verify 7 7 H204.txt
+./vpar 7 R7_18_826.txt 0 0 826
+python3 certifyP.py G114c.txt H204.txt H204.txt maps_R7_18_826.txt R7_18_826.txt
