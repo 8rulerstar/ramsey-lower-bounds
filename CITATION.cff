@@ -10,4 +10,4 @@ repository-code: "https://github.com/8rulerstar/ramsey-lower-bounds"
 keywords: [Ramsey numbers, graph theory, lower bounds]
 date-released: 2026-11-12
 doi: 10.5281/zenodo.24128875
-version: "1.1"
+version: "1.2"
