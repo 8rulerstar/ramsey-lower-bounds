@@ -60,7 +60,7 @@ The bound 4 in (b) is where w >= 3 matters: for w = 2 the theorem gives omega(F)
 ## Checks
 
 - `tables.py`: the finite facts (T1) to (T3) and the clique-side case (b).
-- Exhaustive check (separate C code): all 2,097,152 labelled graphs on at most 7 vertices and 20,000 random graphs on
+- Exhaustive check (separate C code): all labelled graphs on 2 to 7 vertices (2,097,152 on 7) and 20,000 random graphs on
   8 vertices give omega(F) = max(w+1, 4) and alpha(F) = 3a exactly.
 - Exact computation (separate code): F from Paley graphs P(13), P(17) (119 vertices) and P(29) (203 vertices, checked
   with `verify`) has exactly omega = w + 1 and alpha = 3a.
