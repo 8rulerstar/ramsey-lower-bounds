@@ -1,6 +1,6 @@
 # A (8,19)-graph on 1238 vertices: R(8,19) >= 1239
 
-> Superseded: [`../triple-gluing`](../triple-gluing) gives R(8,19) >= 1267 (2026-11-11). This folder is kept as published.
+> Superseded: [`../triple-gluing`](../triple-gluing) gives R(8,19) >= 1267 (2026-11-11) and [`../seven-copies`](../seven-copies) gives R(8,19) >= 1429 (2026-11-12). This folder is kept as published.
 
 `R8_19_1238.txt` is a graph on 1238 vertices built so that it has no K8 and no independent set of size 19, which gives
 

@@ -10,7 +10,7 @@ rev. 18, 2026) or, where newer, the google-research ramsey_number_bounds reposit
 
 - **R(7,16) >= 708** (DS1 rev. 18: 629) and **R(8,19) >= 1429** (1237), from theorem D (heptagon gluing).
 - **R(8,12) >= 521** (google-research: 511), from theorem D1.
-- **R(6,16) >= 454** (434), **R(7,17) >= 736** (729), **R(7,19) >= 919** (908), from the triple gluing (theorem H).
+- **R(6,16) >= 454** (434), **R(7,17) >= 736** (729), **R(7,19) >= 919** (908), from triple gluing (theorem H); also R(7,18) >= 827 (797) and R(8,18) >= 1054 (1049; google-research 1052).
 - In cells the survey does not list: **R(8,25) >= 2449** (2049 is the best value I could derive from published results),
   from theorem D12; **R(7,20) >= 933** (931 from known results).
 
@@ -25,8 +25,8 @@ folder has the statement and a written proof; the proofs have not yet been read 
 | H (triple gluing) | R(k, s_1+s_2+s_3-2) >= n_1+n_2+n_3+3m+1, M with no K_{k-1}, k >= 4 | [`triple-gluing`](triple-gluing) |
 | P | theorem H with a different common part for each pair of graphs | [`triple-gluing`](triple-gluing), section "Different common parts" |
 | B | r graphs instead of 3 (improves no table entry) | [`triple-gluing`](triple-gluing), section "Generalization to r graphs" |
-| D1 | R(k+1, p+q-1) >= n_1+n_2+2m+1, any common M, k >= 4 (contains DS1 2.3.i) | [`r8-12`](r8-12) |
 | D | R(k+1, s_1+s_2+s_3-2) >= n_1+n_2+n_3+4m+1, any common M, k >= 4; in particular R(k+1, 3s-2) >= 7R(k,s) - 6 | [`seven-copies`](seven-copies) |
+| D1 (two-graph version of D) | R(k+1, p+q-1) >= n_1+n_2+2m+1, any common M, k >= 4 (contains DS1 2.3.i) | [`r8-12`](r8-12) |
 | D12 | R(k+1, 4s-3) >= 12R(k,s) - 11, k >= 4 (copies of one graph) | [`twelve-copies`](twelve-copies) |
 
 ## Current bounds
@@ -43,17 +43,17 @@ folder has the statement and a written proof; the proofs have not yet been read 
 | R(7,18) >= 827 | 797 | 826 vertices, theorem P | [`triple-gluing`](triple-gluing) |
 | R(7,17) >= 736 | 729 | 735 vertices, theorem H | [`triple-gluing`](triple-gluing) |
 | R(6,16) >= 454 | 434 | 453 vertices, theorem H, three copies of P(101) | [`r6-16`](r6-16) |
-| R(5,21) >= 445 | 441 | 444 vertices, XSR2 Theorem 3 with a common part found by search; independent side by that published theorem | [`r5-21`](r5-21) |
+| R(5,21) >= 445 | 441 | 444 vertices, Theorem 3 of Xu, Shao, Radziszowski (2011) with a common part found by search; independent side by that published theorem | [`r5-21`](r5-21) |
 | R(7,12) >= 420 | 417 | 419 vertices, DS1 2.3.h with a newer input graph; independent side by direct search | [`r7-12`](r7-12) |
 | R(3,3,16) >= 293 | 291 (Table XIb) | 3-colouring of K_292 (DS1 6.2.g), all three colours checked by direct search | [`r3-3-16`](r3-3-16) |
 
 ## How the results are checked
 
-For every graph the clique side (no K_k) is checked by exhaustive search (`vpar`, all roots). For the graphs from
+For every graph the clique side (no clique of the forbidden size) is checked by exhaustive search (`vpar`, all roots). For the graphs from
 theorems H, P, D, D1 and D12 the independent side is checked, in addition to the written proof, by an exhaustive
 certificate on the graph file: a program verifies, for every pair of elements that can lie together in an independent set,
 the conditions of the proof's assignment, so the bound on the independence number does not rest on the written argument
-(it uses the independence numbers of the input graphs, checked by `verify`). Each of these folders has a `check.sh` that
+(it uses the independence numbers of the input graphs, checked by `verify`). Each of these folders has a `check.sh` (`reproduce.sh` in `r6-16`) that
 rebuilds the graph from its inputs and runs all checks. To start reading: [`seven-copies`](seven-copies), then
 [`r8-12`](r8-12) and [`triple-gluing`](triple-gluing).
 
