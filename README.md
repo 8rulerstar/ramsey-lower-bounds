@@ -31,4 +31,4 @@ Byungkun Jang, independent researcher, bkbkjang@gmail.com
 
 The work was done with the help of an AI coding assistant (Claude); see each folder.
 
-Code: MIT (see `LICENSE`). `r7-16/R(4, 15) >= 163.txt` and `r3-3-16/R3_15_73_input.txt` come from google-research under the Apache License 2.0 (copy in `r7-16/LICENSES/Apache-2.0.txt`). Graph files built from other authors' graphs contain those graphs (see `LICENSE`). Input graphs from other authors keep their source; see each folder.
+Code: MIT. Documentation and the graphs constructed here: CC BY 4.0, please credit Byungkun Jang and cite the Zenodo DOI (see `LICENSE`, `CITATION.cff`). `r7-16/R(4, 15) >= 163.txt` and `r3-3-16/R3_15_73_input.txt` come from google-research under the Apache License 2.0 (copy in `r7-16/LICENSES/Apache-2.0.txt`). Graph files built from other authors' graphs contain those graphs (see `LICENSE`). Input graphs from other authors keep their source; see each folder.
