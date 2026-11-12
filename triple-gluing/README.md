@@ -7,6 +7,7 @@ Five more graphs from the same construction as [`../r6-16`](../r6-16) (R(6,16) >
 |---|---|---|---|---|
 | R(7,17) >= 736 | 729 | `R7_17_735.txt` | G114, G114, H204 | Paley graph P(101), m = 101 |
 | R(7,18) >= 826 | 797 | `R7_18_825.txt` | G114, H204, H204 | P(101), m = 101 |
+| R(7,18) >= 827 | 797 | `R7_18_826.txt` | the same | P(101) for two pairs, P(101) plus one vertex for the third (theorem P below) |
 | R(7,19) >= 919 | 908 | `R7_19_918.txt` | three copies of the complement of H204 | neighbourhood of a vertex, m = 102 |
 | R(7,20) >= 933 | no entry (931 follows from 919 above and R(k,s+1) >= R(k,s) + 2k - 2) | `R7_20_932.txt` | complement of H204 twice, complement of G218 (a (7,8)-graph) | neighbourhood of a vertex, m = 102 |
 | R(8,19) >= 1267 | 1237 | `R8_19_1266.txt` | three copies of G218 | H204, m = 204 |
@@ -63,6 +64,40 @@ R(k, s_1 + s_2 + s_3 - 2) >= R(k,s_1) + R(k,s_2) + R(k,s_3) + 3k - 8, in particu
 This general form is not new strength for k >= 5: Corollary 3 of Xu, Shao and Radziszowski (2011) with t = 3 gives
 R(k, s + 2) >= R(k, s) + R(3, k) + k - 2, which is equal for k = 5, 6 and larger for k >= 7. The gain of the theorem is in
 the structured cases above, where the three graphs share a large common part.
+
+## Different common parts for the three pairs: R(7,18) >= 827
+
+**Theorem P.** Let k >= 4 and G_1, G_2, G_3 be (k, s_a)-graphs on n_a vertices. Let M be a graph on an index set S and
+S_12, S_23, S_13 subsets of S with union S (they may overlap). For each a let D_a be the union of the two sets S_e with
+a in e, and x_a : D_a -> V(G_a) injective maps whose images induce copies of M[D_a]. Assume
+(H0) omega(M) <= k - 1; (H1) no M[S_e] contains K_{k-1}; (H2) for each a, no (k-1)-clique of M[D_a] contains an index of
+S_bc, where bc is the type not containing a. (All three hold if omega(M) <= k - 2.) Then
+
+R(k, s_1 + s_2 + s_3 - 2) >= n_1 + n_2 + n_3 + |S_12| + |S_23| + |S_13| + 1.
+
+With S_12 = S_23 = S_13 = V(M) this is the triple gluing above.
+
+**Construction.** As above, with new vertices w_e(j) only for j in S_e: (E1) edges of each G_a; (E2) x_a(j) ~ x_b(j) when
+j is in D_a and D_b; (E3) w_e(j) ~ the neighbours of x_a(j) in G_a for a in e; (E4) w_ab(j) ~ x_c(j) when j is in D_c;
+(E5) w_e(j) ~ w_f(l) iff jl is an edge of M.
+
+**Proof.** Independent sets: the side assignment of the triple-gluing proof works unchanged (a vertex w_e(j) is sent to a
+side d in e, and j in S_e is in D_d, so x_d(j) exists); it does not use (H0) to (H2). Cliques: let K be a clique, J the
+indices of its W-vertices (a clique of M by E5) and P the set of parts it meets. If P is empty, |K| <= omega(M) <= k - 1
+(H0). If P = {a} and K contains some w_bc(j0) with a not in bc, then K meets G_a only in x_a(j0), the other W-vertices
+have types containing a, so J is a clique of M[D_a] containing j0 in S_bc and |J| <= k - 2 by (H2). If P = {a} and every
+W-vertex has a type containing a, map w(l) to x_a(l) as before: |K| <= k - 1. If P = {a, b}, K meets G_a, G_b in
+x_a(j), x_b(j), all W-vertices are w_ab(l) with l adjacent to j in M, so J is in S_ab and J + {j} is a clique of M[D_a];
+|J| >= k - 2 would give a K_{k-1} in M[S_ab] (if j is in S_ab, against H1) or a (k-1)-clique of M[D_a] through S_bc
+(otherwise, against H2). If P = {1,2,3}, K has no W-vertex and |K| = 3 <= k - 1.
+
+**The graph.** G_1 = G114c (the (7,6)-graph, `G114c.txt`), G_2 = G_3 = H204 (`H204.txt`); S_12 = S_13 = P(101) as in
+R(7,18) >= 826, and S_23 = P(101) plus one more index mapped to vertex 203 of both copies of H204 (it has no neighbour in
+the copy of P(101)). So M is P(101) plus an isolated vertex, omega(M) = 5 = k - 2, and the graph `R7_18_826.txt` has
+114 + 204 + 204 + 101 + 102 + 101 = 826 vertices. It is the R(7,18) >= 826 graph plus one vertex and one edge.
+Checks: no K_7 by `vpar` over all 826 roots; `python3 certifyP.py G114c.txt H204.txt H204.txt maps_R7_18_826.txt
+R7_18_826.txt` checks the pair conditions of the independent-set argument on this graph (3,860 elements,
+3,875,414 admissible pairs, 0 violations), so alpha <= 17 does not rest on the written proof.
 
 ## Generalization to r graphs (theorem B)
 
