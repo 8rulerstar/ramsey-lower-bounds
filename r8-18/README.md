@@ -1,5 +1,7 @@
 # R(8,18) >= 1054
 
+**Superseded:** R(8,18) >= 1133 by theorem DG, see [`../general-gluing`](../general-gluing).
+
 DS1 rev. 18 lists R(8,18) >= 1049; google-research (ramsey_number_bounds, 2026-10-22) lists 1052. The graph
 `R8_18_1053.txt` has 1053 vertices, no K_8 and no independent set of size 18.
 
