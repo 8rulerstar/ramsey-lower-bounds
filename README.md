@@ -8,6 +8,7 @@ Graphs and colourings that improve lower bounds for classical Ramsey numbers, ea
 
 | bound | previous | graph | folder |
 |---|---|---|---|
+| R(8,12) >= 521 | 511 (google-research 2026) | 520 vertices, theorem D1: a (7,7)- and a (7,6)-graph glued along P(101) with k raised by one; no K_8 by search, independent side by an exhaustive certificate check on the graph | [`r8-12`](r8-12) |
 | R(8,19) >= 1429 | 1237 (DS1 #18) | 1428 vertices, seven copies of the 204-vertex (7,7)-graph; no K_8 by search over all roots, independent side by the theorem | [`seven-copies`](seven-copies) |
 | R(7,16) >= 708 | 629 (DS1 #18) | 707 vertices, seven copies of P(101); no K_7 by search, independent side by the theorem (direct search running) | [`seven-copies`](seven-copies) |
 | R(8,18) >= 1054 | 1049 (DS1 #18), 1052 (google-research 2026-10-22) | 1053 vertices, DS1 2.3.h with a 104-vertex common part; independent side by a short proof | [`r8-18`](r8-18) |
