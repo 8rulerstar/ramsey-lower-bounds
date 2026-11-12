@@ -51,11 +51,13 @@ maximum independent set of G.
 
 **omega(F) <= max(w+1, 4).** Let K be a clique, S_j its part in fibre j, Q = {j : S_j nonempty}. Fibres are joined only
 along edges of G, so Q is a clique of G and |Q| <= w. C has no triangle, so |S_j| <= 2, and between S_j and S_l (j != l)
-there is no R-edge. (a) If S_j = {c, c'} (an edge of C) and d in S_l, then d is not c or c' and not C-adjacent to them.
+there is no R-edge. (a) If S_j = {c, c'} (an edge of C) and d in S_l, then d is not c or c' and not C-adjacent to them (d must be
+adjacent to both c and c' across fibres, i.e. cd and c'd are not in R; d = c fails because cc' is in C, a subset of R).
 (b) If two fibres carry 2 copies, their C-edges e, f are disjoint with no C-edge between them; the remaining 3 vertices of
 the 7-cycle are each C-adjacent to an end of e or f, so by (a) no third fibre can join: |K| = 4. (c) Otherwise
 |K| <= |Q| + 1 <= w + 1. Lower bound: on a w-clique of G put {0,5} in one fibre and copy 3 in the others.
-The bound 4 in (b) is where w >= 3 matters: for w = 2 the theorem gives omega(F) = 4 = w + 2.
+The bound 4 in (b) is where w >= 3 matters: for w = 2, {0,5} and {3,4} on the two ends of an edge of G give a
+4-clique (03, 04, 53, 54 are not in R), so omega(F) = 4 = w + 2. For w = 1, omega(F) = 2.
 
 ## Checks
 

@@ -1,4 +1,4 @@
-# Verifies every finite fact used in PROOF.md (pure Python, no dependencies).
+# Verifies every finite fact used in the proof in README.md (pure Python, no dependencies).
 import itertools
 P="001112121221211221111"
 def t(c,d):
