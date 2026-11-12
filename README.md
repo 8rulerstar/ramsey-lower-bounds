@@ -67,6 +67,7 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
 - v1.1 (2026-11-12), [10.5281/zenodo.24149479](https://doi.org/10.5281/zenodo.24149479): R(7,16) >= 708, R(8,19) >= 1429, R(8,18) >= 1054, R(7,18) >= 827.
 - v1.2.1 (2026-11-12), [10.5281/zenodo.24150638](https://doi.org/10.5281/zenodo.24150638): theorems D and D1 with certificates, R(8,12) >= 521.
 - v1.3 (2026-11-12), [10.5281/zenodo.24153490](https://doi.org/10.5281/zenodo.24153490): theorem D12, R(8,25) >= 2449.
+- v1.4 (2026-11-12), [10.5281/zenodo.24154888](https://doi.org/10.5281/zenodo.24154888): theorem DG, R(8,18) >= 1133.
 
 <details>
 <summary>Earlier bounds, now superseded</summary>
