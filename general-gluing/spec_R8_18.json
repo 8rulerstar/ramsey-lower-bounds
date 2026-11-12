@@ -1,0 +1,5 @@
+{"pattern": 7, "M": 101,
+ "parts": [{"graph": "H204.txt", "map": "maps_P101_H204_G114.txt:0", "S": [0, 1, 3, 4]},
+           {"graph": "G114.txt", "map": "maps_P101_H204_G114.txt:1", "S": [2]}],
+ "colours": [[0, 1], [2]],
+ "colouring": "Z7-T2S|(((0, 1, 3, 4), (0, 1)), ((2,), (2,)))"}
