@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24128875.svg)](https://doi.org/10.5281/zenodo.24128875)
 
-Archived snapshots: Zenodo, all versions DOI [10.5281/zenodo.24128875](https://doi.org/10.5281/zenodo.24128875); v1.0 of 2026-11-11 is [10.5281/zenodo.24128876](https://doi.org/10.5281/zenodo.24128876).
+Archived snapshots: Zenodo, all versions DOI [10.5281/zenodo.24128875](https://doi.org/10.5281/zenodo.24128875); v1.0 of 2026-11-11 is [10.5281/zenodo.24128876](https://doi.org/10.5281/zenodo.24128876). v1.1 of 2026-11-12 (seven-copy theorem, R(7,16) >= 708, R(8,19) >= 1429, R(8,18) >= 1054, R(7,18) >= 827) is [10.5281/zenodo.24149479](https://doi.org/10.5281/zenodo.24149479).
 
 Graphs and colourings that improve lower bounds for classical Ramsey numbers, each with a checker you can run. The clique side is always checked by search. The table says how the independent side is established: by direct search, by an exhaustive certificate check on the graph (the triple-gluing rows: a program verifies the conditions of the proof on that graph), or by a published theorem. Most bounds here come from constructions listed in the dynamic survey *Small Ramsey Numbers* (DS1), applied to newer input graphs. R(6,16) and the `triple-gluing` bounds use a construction that glues three graphs along a common induced subgraph (theorem and proof in [`triple-gluing`](triple-gluing)); I have not found it in the literature. The [`seven-copies`](seven-copies) bounds use a new construction R(k+1, 3s-2) >= 7R(k,s) - 6 (theorem and proof in that folder), also not found in the literature.
 
