@@ -1,82 +1,93 @@
-# Seven copies: R(k+1, 3s-2) >= 7R(k,s) - 6, and R(7,16) >= 708
+# Heptagon gluing: R(k+1, s_1+s_2+s_3-2) >= n_1+n_2+n_3+4m+1, R(7,16) >= 708, R(8,19) >= 1429
 
-**Theorem.** Let G be a graph with clique number w and independence number a. The graph F below has 7|V(G)| vertices,
-omega(F) = max(w+1, 4) for w >= 2, and alpha(F) = 3a. Hence for k >= 4 and s >= 2
+**Theorem D.** Let k >= 4. For i = 1, 2, 3 let G_i be a (k, s_i)-graph on n_i vertices (no K_k, no independent set of
+size s_i), and let M be a graph on m vertices that is an induced subgraph of all three (copies x_i(j), j in V(M); no other
+condition on M). Then there is a (k+1, s_1 + s_2 + s_3 - 2)-graph on n_1 + n_2 + n_3 + 4m vertices, so
 
-**R(k+1, 3s-2) >= 7R(k,s) - 6**
+**R(k+1, s_1 + s_2 + s_3 - 2) >= n_1 + n_2 + n_3 + 4m + 1.**
 
-(take G a (k,s)-graph on R(k,s)-1 vertices: omega(F) <= max(k, 4) = k, alpha(F) <= 3(s-1)).
+With G_1 = G_2 = G_3 = M = G a (k,s)-graph on R(k,s) - 1 vertices: **R(k+1, 3s-2) >= 7R(k,s) - 6** (k >= 4).
+The two-graph version (theorem D1, `../r8-12`) gives R(k+1, p+q-1) >= n_1 + n_2 + 2m + 1 and contains DS1 2.3.i
+(Xu, Xie, Exoo, Radziszowski, Electron. J. Combin. 11 (2004) #R35: R(2k-1, l) >= 4R(k, l-1) - 3; in complement form four
+copies with the independence number doubled) as the case G_1 = G_2 = M. The closest other result I know is DS1 2.3.c
+(Chung, Cleve, Dagum: R(3, 4k+1) >= 6R(3, k+1) - 5, triangle-free only). I have not found theorem D in the literature
+(see the end); if it is known, I would be glad to learn the reference.
 
-The closest results I know are DS1 2.3.i (Xu, Xie, Exoo, Radziszowski: R(2k-1, l) >= 4R(k, l-1) - 3, Electron. J. Combin. 11
-(2004) #R35; in complement form four copies with the independence number doubled) and DS1 2.3.c (Chung, Cleve, Dagum: R(3, 4k+1) >= 6R(3, k+1) - 5, triangle-free only).
-I have not found this statement in the literature (DS1 rev. 18 sections 2.3 and 6.2, and the papers listed at the end);
-if it is known, I would be glad to learn the reference.
-
-| bound | DS1 rev. 18 | input G | how checked |
+| bound | DS1 rev. 18 | graph | how checked |
 |---|---|---|---|
-| R(7,16) >= 708 | 629 (our 649 in `../r7-16`) | Paley graph P(101), w = a = 5 | graph `R7_16_707.txt`: no K_7 by search over all roots; independent side by the theorem (direct search for independent 16-sets running, see Checks) |
-| R(8,19) >= 1429 | 1237 (our 1267 in `../triple-gluing`) | the 204-vertex (7,7)-graph H204 of `../triple-gluing`, w = a = 6 | no K_8 by search over all 1428 roots (graph built from `../triple-gluing/H204.txt`, not included); independent side by the theorem |
+| R(7,16) >= 708 | 629 | `R7_16_707.txt`: three copies of the Paley graph P(101), M = P(101) | no K_7 by search over all roots; independent side by an exhaustive certificate check on the graph (`certifyD.py`) |
+| R(8,19) >= 1429 | 1237 | `R8_19_1428.txt`: three copies of H204c, the complement of the 204-vertex (7,7)-graph of `../triple-gluing`, M = H204c | no K_8 by search over all roots; independent side by `certifyD.py` |
 
-For most cells the theorem is weaker than known bounds (from (4,4), (5,5), (4,6) graphs it gives values below DS1);
-it wins only where a very good (k,s)-graph is known, as for P(101) and H204.
+For most cells the theorem is weaker than known bounds (from the (4,4), (5,5), (4,6) critical graphs it gives values below
+DS1); it wins where a very good (k,s)-graph is known, as P(101) and H204.
 
 ## Construction
 
-Copies are numbered 0..6. Let C be the 7-cycle 0-5-2-3-4-1-6-0 and R the graph C plus the two chords {0,1}, {0,2}.
-F has the vertices (j, c), j in V(G), c in 0..6 (vertex number 7j + c in the files), and the edges
-- (j, c) ~ (j, d) iff cd is an edge of C (inside a fibre);
-- for every edge jl of G: (j, c) ~ (l, d) iff cd is not an edge of R (this includes c = d);
-- no edges between fibres j, l with jl not an edge of G.
+Positions are Z_7. Three distinct positions sigma_1, sigma_2, sigma_3 (the files use 0, 1, 6) carry G_1, G_2, G_3; each of
+the other four positions c carries a copy W_c of M. A vertex of M inside G_i or W_c has an index j and is written (j, c);
+the other vertices of the G_i are private.
+- same position: the edges of G_i, or of M;
+- neighbouring positions (c' = c +- 1): only (j, c) ~ (j, c') with the same index;
+- all other pairs of positions (twin rule): (j, c) ~ (l, c') iff jl is an edge of M; a private vertex y of G_c and (l, c')
+  are adjacent iff y ~ x_c(l) in G_c; private vertices of different sides are not adjacent.
 
-`build.py` encodes the same graph by a 21-character pattern over pairs of copies ('2' = edge of C, '0' = chord of R,
-'1' = all other pairs).
+`heptaglue.py G1 G2 G3 maps out [s1 s2 s3]` builds the graph; the files here are rebuilt identically from `P101.txt`,
+`H204c.txt` and the identity maps `maps_id101.txt`, `maps_id204.txt`.
 
 ## Proof
 
-Finite facts about C and R (all checked by `tables.py`):
-- (T1) phi(0) = phi(4) = 1, phi(1) = phi(2) = 2, phi(3) = phi(5) = phi(6) = 3 is a proper 3-colouring of R.
-- (T2) each of the 14 pairs of copies non-adjacent in C has at most one common R-neighbour.
-- (T3) each of the 7 triples independent in C has no common R-neighbour, and C has no independent 4-set.
+**No K_{k+1}.** Let K be a clique and K_j the set of positions of its vertices with index j. Inside one index only
+neighbouring positions are adjacent, and C_7 has no triangle, so K_j is one position or two neighbouring positions
+{d, d+1}. Two vertices with different indices lie in equal or non-neighbouring positions and have adjacent indices.
+If K_j = {d, d+1}, every other indexed vertex of K lies in {d+3, d+4, d+5}; if a second index also uses two positions
+({d+3, d+4} or {d+4, d+5}), no position is left for a third index, and |K| = 4 <= k (this is where k >= 4 is used).
+- No private vertex in K: if all K_j are single positions, the indices form a clique of M, so |K| <= omega(M) <= k - 1
+  (M is induced in G_1); with one pair, |K| <= omega(M) + 1 <= k.
+- Private vertices Y in K: private vertices of different sides are not adjacent, so Y lies in one G_c. Vertices at
+  positions c +- 1 are not adjacent to Y, so they are not in K. Then at most one K_j is a pair (in each of the cases
+  {c+2, c+3}, {c+3, c+4}, {c+4, c+5}, removing c +- 1 from the remaining allowed positions leaves no second pair).
+  Mapping each indexed vertex (l, c') to x_c(l) (twin rule, M induced) sends Y and the indices onto a clique of G_c,
+  so |Y| + (number of indices) <= k - 1 and |K| <= k.
 
-**alpha(F) <= 3a.** Let I be independent and S_j = {c : (j,c) in I}. Each S_j is independent in C, and if jl is an
-edge of G then every c in S_j and d in S_l satisfy cd in R (in particular c != d); call S_j, S_l compatible.
-For i = 1, 2, 3 let A_i be the family of nonempty C-independent sets S with: |S| = 1 and phi(S) = i; or |S| = 2 and no
-common R-neighbour of S has colour i; or |S| = 3. Two sets in the same A_i are never compatible: two singletons have
-the same colour, so they are not R-adjacent (T1); a singleton {e} and a pair U would need e to be a common neighbour of U
-of colour i; a triple has no common neighbour (T3); two sets of size >= 2 would need two common neighbours of a pair (T2).
-So J_i = {j : S_j in A_i} is independent in G and |J_i| <= a. A singleton lies in exactly one A_i, a pair in at least
-two (its common neighbours, at most one by (T2), have at most one colour), a triple in all three. Hence
-|I| = sum |S_j| <= |J_1| + |J_2| + |J_3| <= 3a. Equality: put a C-independent triple, e.g. {0,3,1}, in each fibre of a
-maximum independent set of G.
+**No independent set of size s_1 + s_2 + s_3 - 2.** Let I be independent and I_j = {c : (j, c) in I}, an independent set
+of C_7 (size at most 3). Colour C_7 properly with 3 colours so that sigma_1, sigma_2, sigma_3 get the colours 1, 2, 3
+(possible for any three positions), and let E_i be the positions of colour i. Let F_i be the family of labels: all
+labels of size 3, all pairs {e, e+3}, the singletons {e} with e in E_i, and the pairs {d-1, d+1} with d not in E_i.
+A label L lies in at least |L| of the families: size 3 in all three; pairs {e, e+3} in all; {e} in one; {d-1, d+1} in the
+two families other than the colour of d. Let T_i be the private vertices of G_i in I together with x_{sigma_i}(j) for
+every j with I_j in F_i. Then |I| <= |T_1| + |T_2| + |T_3|, and T_i is independent in G_i:
+- (a) Let j != l with I_j, I_l in F_i and jl an edge of M. Since I is independent, every position of I_j must be a
+  neighbour of every position of I_l. In C_7 this happens only when one label is {e} and the other is {e-1}, {e+1} or
+  {e-1, e+1}. If {e} is in F_i then e is in E_i, so e +- 1 are not in E_i and {e-1, e+1} is not in F_i, a contradiction.
+  So jl is not an edge of M, and x(j), x(l) are not adjacent because M is induced.
+- (b) A private y in I and I_j in F_i: no label in F_i is contained in {sigma_i - 1, sigma_i + 1} (sigma_i is in E_i, so
+  the singletons {sigma_i +- 1} and the pair {sigma_i - 1, sigma_i + 1} are not in F_i). So I_j has a position c equal to
+  sigma_i or not a neighbour of it, (j, c) is not adjacent to y, and therefore (directly if c = sigma_i, by the twin rule
+  otherwise) y and x(j) are not adjacent.
+Hence |I| <= alpha(G_1) + alpha(G_2) + alpha(G_3) <= (s_1 - 1) + (s_2 - 1) + (s_3 - 1).
 
-**omega(F) <= max(w+1, 4).** Let K be a clique, S_j its part in fibre j, Q = {j : S_j nonempty}. Fibres are joined only
-along edges of G, so Q is a clique of G and |Q| <= w. C has no triangle, so |S_j| <= 2, and between S_j and S_l (j != l)
-there is no R-edge. (a) If S_j = {c, c'} (an edge of C) and d in S_l, then d is not c or c' and not C-adjacent to them (d must be
-adjacent to both c and c' across fibres, i.e. cd and c'd are not in R; d = c fails because cc' is in C, a subset of R).
-(b) If two fibres carry 2 copies, their C-edges e, f are disjoint with no C-edge between them; the remaining 3 vertices of
-the 7-cycle are each C-adjacent to an end of e or f, so by (a) no third fibre can join: |K| = 4. (c) Otherwise
-|K| <= |Q| + 1 <= w + 1. Lower bound: on a w-clique of G put {0,5} in one fibre and copy 3 in the others.
-The bound 4 in (b) is where w >= 3 matters: for w = 2, {0,5} and {3,4} on the two ends of an edge of G give a
-4-clique (03, 04, 53, 54 are not in R), so omega(F) = 4 = w + 2. For w = 1, omega(F) = 2.
+## Checks (`sh check.sh`)
 
-## Checks
+- `heptaglue.py` rebuilds both graphs identically from the inputs; `verify 6 6 P101.txt` and `verify 7 7 H204c.txt` check
+  the inputs.
+- No K_7 in `R7_16_707.txt` and no K_8 in `R8_19_1428.txt`: `vpar` over all roots (MAXN 1536 for the larger graph).
+- `certifyD.py G1 G2 G3 maps F` checks on the graph file, for every pair of elements that can lie together in an
+  independent set (private vertices and fibre states (j, L) with L independent in F), that the assignment in the proof
+  sends them to distinct non-adjacent vertices of the same G_i: R(7,16): 2,828 elements, 2,050,300 admissible pairs;
+  R(8,19): 5,712 elements, 8,368,080 pairs; 0 violations each, about 2 and 4 seconds. So the independent side does not
+  rest on the written proof.
+- Random exact computation (separate code, not included): about 2.29 million small instances with different G_i, arbitrary
+  M and embeddings and arbitrary side positions, no counterexample; removing a matching edge between neighbouring
+  positions or adding a twin edge there, allowing k = 3 or a non-induced M all give counterexamples.
 
-- `tables.py`: the finite facts (T1) to (T3) and the clique-side case (b).
-- Exhaustive check (separate C code): all labelled graphs on 2 to 7 vertices (2,097,152 on 7) and 20,000 random graphs on
-  8 vertices give omega(F) = max(w+1, 4) and alpha(F) = 3a exactly.
-- Exact computation (separate code): F from Paley graphs P(13), P(17) (119 vertices) and P(29) (203 vertices, checked
-  with `verify`) has exactly omega = w + 1 and alpha = 3a.
-- `sh check.sh` rebuilds `R7_16_707.txt` from P(101), checks the facts, searches for K_7 over all 707 roots (none) and for
-  independent 16-sets. Symmetry used in the last step: (j, c) -> (j+1 mod 101, c) is an automorphism of F (checked
-  directly on the file), so every independent set has a translate whose smallest vertex lies in fibre 0, and roots 0..6
-  cover all cases. Status of this search: see the commit history; a full search over all roots without the symmetry is
-  also being run.
+`VARIANT.md` describes an earlier variant of the seven-copy graph (published in v1.1, `R7_16_707_variant.txt`, built by
+`build.py`) with its own proof, kept for reference.
 
-The construction was found, and the proof written, with the help of an AI coding assistant (Claude); I checked the
-finite facts and the argument, but no expert has read the proof yet.
+The construction and the proofs were found with the help of an AI coding assistant (Claude); I checked the finite facts
+and reran the checks, but no expert has read the proofs yet.
 
 Literature read in full without finding this statement: DS1 rev. 18 (sections 2.3, 6.1, 6.2); Xu, Xie, Exoo,
-Radziszowski, Electron. J. Combin. 11 (2004) #R35; Xu, Xie, Radziszowski,
-J. Graph Theory 47 (2004); Xu, Shao, Radziszowski, SIAM J. Discrete Math. 25 (2011); Xu and Radziszowski's survey
-(sur14) and slides (slides68); Rowley, Australas. J. Combin. 68 (2017); Zhu, Xu, Radziszowski (arXiv 1507.01133);
-Morris (arXiv 2601.05221). Not read in full: Chung, Cleve, Dagum, J. Combin. Theory B 57 (1993).
+Radziszowski, Electron. J. Combin. 11 (2004) #R35; Xu, Xie, Radziszowski, J. Graph Theory 47 (2004); Xu, Shao,
+Radziszowski, SIAM J. Discrete Math. 25 (2011); Xu and Radziszowski's survey (sur14) and slides (slides68); Rowley,
+Australas. J. Combin. 68 (2017); Zhu, Xu, Radziszowski (arXiv 1507.01133); Morris (arXiv 2601.05221). Not accessible:
+Chung, Cleve, Dagum, J. Combin. Theory B 57 (1993).
