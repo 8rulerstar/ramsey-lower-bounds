@@ -15,7 +15,7 @@ if it is known, I would be glad to learn the reference.
 | bound | DS1 rev. 18 | input G | how checked |
 |---|---|---|---|
 | R(7,16) >= 708 | 629 (our 649 in `../r7-16`) | Paley graph P(101), w = a = 5 | graph `R7_16_707.txt`: no K_7 by search over all roots; independent side by the theorem (direct search for independent 16-sets running, see Checks) |
-| R(8,19) >= 1429 | 1237 (our 1267 in `../triple-gluing`) | the 204-vertex (7,7)-graph H204 of `../triple-gluing`, w = a = 6 | by the theorem only (graph not included; `build.py` can build it); not checked by search yet |
+| R(8,19) >= 1429 | 1237 (our 1267 in `../triple-gluing`) | the 204-vertex (7,7)-graph H204 of `../triple-gluing`, w = a = 6 | no K_8 by search over all 1428 roots (graph built from `../triple-gluing/H204.txt`, not included); independent side by the theorem |
 
 For most cells the theorem is weaker than known bounds (from (4,4), (5,5), (4,6) graphs it gives values below DS1);
 it wins only where a very good (k,s)-graph is known, as for P(101) and H204.
