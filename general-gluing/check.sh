@@ -1,5 +1,5 @@
 #!/bin/sh
-# Checks for R(8,18) >= 1133 (a few minutes on 10 cores).
+# Checks for R(8,18) >= 1133 (about 20 seconds on 10 cores).
 set -e
 cc -O3 -o verify verify.c && cc -O3 -o vpar vpar.c
 python3 verify_colourings.py | tail -1
