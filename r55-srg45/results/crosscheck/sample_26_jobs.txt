@@ -1,0 +1,27 @@
+K25_e26_44000 pairs 400 nwin cloud 0 inc 0 MATCH
+K289_e26_12000 pairs 400 nwin cloud 0 inc 0 MATCH
+K295_e26_8000 pairs 400 nwin cloud 0 inc 0 MATCH
+K298_e26_0 pairs 400 nwin cloud 0 inc 0 MATCH
+K11_e26_64000 pairs 400 nwin cloud 0 inc 0 MATCH
+K298_e26_52000 pairs 400 nwin cloud 0 inc 0 MATCH
+K298_e26_48000 pairs 400 nwin cloud 0 inc 0 MATCH
+K298_e26_56000 pairs 400 nwin cloud 0 inc 0 MATCH
+K306_e26_32000 pairs 400 nwin cloud 0 inc 0 MATCH
+K298_e26_8000 pairs 400 nwin cloud 0 inc 0 MATCH
+K2_e26_60000 pairs 400 nwin cloud 0 inc 0 MATCH
+K53_e26_8000 pairs 400 nwin cloud 0 inc 0 MATCH
+K58_e26_60000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_0 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_24000 pairs 400 nwin cloud 0 inc 0 MATCH
+K68_e28_76000 pairs 400 nwin cloud 2 inc 2 MATCH
+K69_e29_16000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_28000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_32000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_36000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_44000 pairs 400 nwin cloud 2 inc 2 MATCH
+K69_e29_4000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_64000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_52000 pairs 400 nwin cloud 0 inc 0 MATCH
+K75_e26_16000 pairs 400 nwin cloud 0 inc 0 MATCH
+K69_e29_8000 pairs 400 nwin cloud 0 inc 0 MATCH
+all done

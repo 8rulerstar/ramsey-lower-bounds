@@ -21,3 +21,7 @@ parts, graphs published by other authors: the Exoo-Tatarevic (6,7)-graph on 114 
 (7,8)-colouring on 218 vertices (github.com/milostatarevic/ramsey-numbers, no license stated there). These parts are not
 covered by this license; they are included as mathematical data with their sources named in the folder READMEs. Credit the
 original authors when you use them. Files from google-research are under the Apache License 2.0 (r7-16/LICENSES).
+
+The files in r55-srg45/data (K/, B/, mckay/) are copies of or selections from the Ramsey graph lists of Brendan D. McKay
+(https://users.cecs.anu.edu.au/~bdm/data/ramsey.html). They are not covered by this license; see that page for their terms
+and credit B. D. McKay when you use them.

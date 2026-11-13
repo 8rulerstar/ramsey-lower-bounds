@@ -1,13 +1,13 @@
 cff-version: 1.2.0
-message: "If you use these graphs, please cite them as below."
-title: "New lower bounds for classical Ramsey numbers, with graphs and checkers"
+message: "If you use these graphs or results, please cite them as below."
+title: "Computational results on classical Ramsey numbers: new lower bounds and a nonexistence result for SRG(45,22,10,11), with graphs and checkers"
 authors:
   - family-names: Jang
     given-names: Byungkun
 type: dataset
 license: CC-BY-4.0
 repository-code: "https://github.com/8rulerstar/ramsey-lower-bounds"
-keywords: [Ramsey numbers, graph theory, lower bounds]
-date-released: 2026-11-12
+keywords: [Ramsey numbers, graph theory, lower bounds, strongly regular graphs]
+date-released: 2026-11-14
 doi: 10.5281/zenodo.24128875
-version: "1.4"
+version: "1.5"

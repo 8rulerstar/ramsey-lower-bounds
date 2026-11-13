@@ -1,0 +1,2 @@
+jobs 1623, pairs 6313538, solutions 1030818, window 799, cpu hours 911.8
+problems 0 []
