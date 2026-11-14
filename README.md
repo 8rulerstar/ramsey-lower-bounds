@@ -86,8 +86,8 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
 - v1.2.1 (2026-11-12), [10.5281/zenodo.24150638](https://doi.org/10.5281/zenodo.24150638): theorems D and D1 with certificates, R(8,12) >= 521.
 - v1.3 (2026-11-12), [10.5281/zenodo.24153490](https://doi.org/10.5281/zenodo.24153490): theorem D12, R(8,25) >= 2449.
 - v1.4 (2026-11-12), [10.5281/zenodo.24154888](https://doi.org/10.5281/zenodo.24154888): theorem DG, R(8,18) >= 1133.
-- v1.5 (2026-11-14): the nonexistence result for SRG(45,22,10,11) in `r55-srg45`. To cite that result alone, cite
-  the v1.5 version DOI and name the folder: B. Jang, *No strongly regular graph SRG(45,22,10,11) is a (5,5)-Ramsey graph*,
+- v1.5 (2026-11-14), [10.5281/zenodo.24209919](https://doi.org/10.5281/zenodo.24209919): the nonexistence result for SRG(45,22,10,11) in `r55-srg45`. To cite that result alone, cite
+  the v1.5 version DOI above and name the folder: B. Jang, *No strongly regular graph SRG(45,22,10,11) is a (5,5)-Ramsey graph*,
   in: Computational results on classical Ramsey numbers, v1.5, folder `r55-srg45`.
 
 <details>
