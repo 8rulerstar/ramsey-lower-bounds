@@ -52,18 +52,25 @@ Raw outputs of the run (one file per job, 79 MB) are attached to the v1.5 releas
 
 ## Reproduce
 
-Requirements: a C compiler, Python 3 with numpy and sympy, and McKay's list `r44_11.g6.gz` of (4,4,11)-graphs from
+Requirements: a C compiler (the run used `gcc -O2 -march=native`, see `pipeline/04_run_job.sh`), Python 3 with numpy and sympy, `shasum` or `sha256sum` for the checksum files, and McKay's list `r44_11.g6.gz` of (4,4,11)-graphs from
 https://users.cecs.anu.edu.au/~bdm/data/ramsey.html (keep it gzipped). The (3,5,10) list is included in `data/mckay/`.
 
 ```bash
 python pipeline/01_filter_K.py                      # 313 -> 147 root classes, compared with data/
 python pipeline/02_build_B.py path/to/r44_11.g6.gz   # rebuilds the B lists, compared with data/B (about 5 minutes)
 python pipeline/03_make_jobs.py                     # rebuilds both job lists, compared with data/
-bash pipeline/04_run_job.sh K69_e29_84000           # runs one job into out/ (minutes to an hour, depending on the job)
+bash pipeline/04_run_job.sh K307_e25_4000 data/jobs_e15.txt  # a short job (about 15 s); e(K)=15 jobs need the second argument
+bash pipeline/04_run_job.sh K69_e29_84000           # a long job (about 40 minutes in the original run)
 python pipeline/06_completeness.py out --present    # checks the jobs present in out/ (omit --present for the full ledger)
 python pipeline/05_check_windows.py out             # exact determinant test of all window solutions in a folder
 python pipeline/07_reroot_check.py                  # closure check of results/window_solutions.tsv
 ```
+
+Notes on reproduction:
+- The per-job `sha256` in `results/jobs_summary.tsv` is the checksum of the original raw output file (in the release archive).
+  Output lines contain the running time in microseconds, so a re-run gives the same counts but a different checksum.
+  Compare counts (`pairs`, `solutions`, `window`) instead; `06_completeness.py` does this.
+- If a run is interrupted with `timeout`, the engine process may survive the shell; stop it with `pkill glue_srg`.
 
 ## Layout
 
