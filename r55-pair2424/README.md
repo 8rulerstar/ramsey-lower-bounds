@@ -133,7 +133,8 @@ python3 ctl.py && NV=41 ./p3_pair3 check ctl.txt   # 100 lines, all OPEN
 
 cd ../indep
 clang++ -O2 -std=c++17 eng.cpp -o eng
-python3 gen.py main SEED 10000 | ./eng > mainX.out  # one run: 50,000 random placements (c = 8..12); two runs give the 100,000
+python3 gen.py main SEED 10000 | ./eng > mainX.out  # one run: 50,000 random placements (c = 8..12); two runs give the 100,000.
+# SEED is any integer (random seed for the sampler).
 python3 gen.py pos 8 | ./eng > pos.out          # original invocations of gen.py were not recorded; reconstructed
 ```
 

@@ -1,0 +1,7 @@
+# build outputs and scratch CNFs
+ctool/p3_pair3
+ctool/p2_pair2
+ctool/pair
+indep/eng
+ctool/p2_cnf/*.cnf
+*.o
