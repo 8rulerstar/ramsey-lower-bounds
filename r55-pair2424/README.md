@@ -94,7 +94,12 @@ Machine: Apple M4 Pro, about 2.1 CPU hours in total.
 - **DRAT certificates only partly.** The 961 stage-3 placements were re-solved with CaDiCaL 3.0.1 and every proof was
   checked by drat-trim: 961/961 VERIFIED (`drat/resid961.tsv`). A random sample of 1,000 placements closed by stage 2
   (seed 20261116) was certified the same way: 1,000/1,000 VERIFIED (`drat/s2_1000.tsv`). Proof files (about 1.8 GB in
-  total) were deleted after checking; sizes and sha256 are in the tables, and `drat/run.py` regenerates them in minutes.
+  total) were deleted after checking; sizes and sha256 are in the tables. To regenerate (build `ctool/p2_pair2` first,
+  CaDiCaL on PATH, `DRAT_TRIM` pointing to drat-trim), run from `drat/`: `python3 run.py ../ctool/full/resid_all.txt out961.tsv`
+  and `python3 run.py s2_sample.txt out1000.tsv` (a few minutes each). The sample was drawn by taking 1,040 line numbers of
+  `open_all.txt` with seed 20261116 (`s2_idx.txt`), dropping those that are among the 961 residuals, and keeping the first
+  1,000; `s2_sample.txt` holds those 1,000 placements (first column: line number in `open_all.txt`), so `open_all.txt`
+  itself (about 11 GB, not included) is not needed.
   The remaining roughly 4.8e9 placements closed by stages 1 and 2 are decided by my own C code without certificates.
   A DRAT check only certifies that the generated CNF is unsatisfiable, not that the CNF encodes the placement correctly.
 - **Covering argument not yet written up.** That every counterexample appears as one of the placements (in particular
