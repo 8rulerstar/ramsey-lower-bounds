@@ -80,6 +80,14 @@ Notes on reproduction:
 - `data/`: K classes, filtered B lists, job lists, control instance, McKay's (3,5,10) list.
 - `results/`: ledger, per-job summary with checksums, all window solutions with exact determinants, cross-check logs.
 
+## AI assistance
+
+The search code, the scripts, the second engine (`second_engine/`) and parts of the text were developed with the help
+of an AI assistant (Claude, Anthropic). The author checked the mathematical statements; all computational claims can be
+rechecked from this folder. Note: the header comment of `src/glue_srg.c` still describes an option of the engine it was
+derived from ("maxsol 0: stop at the first solution"); in this engine `maxsol 0` enumerates all solutions, as used in the
+run. The source is left unchanged so that it matches `src/SHA256SUMS`.
+
 ## Data sources and licence
 
 `data/mckay/r35_10.g6` is a copy of, and `data/B/*.g6` and `data/K/*.g6` are selections from, the Ramsey graph lists of
