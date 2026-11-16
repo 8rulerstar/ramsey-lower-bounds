@@ -2,8 +2,8 @@
 
 **This is not a bound.** 43 <= R(5,5) <= 46 is unchanged. The lemma restricts how two vertices of a hypothetical
 (5,5,45)-colouring with large, edge-rich neighbourhoods can sit next to each other. The proof is computer-assisted:
-the exhaustive computation is complete, but the written covering argument (that the placements cover all cases) and
-DRAT certificates are still missing, and it has not been read by an expert. See "Limitations".
+the exhaustive computation is complete, but the written covering argument (that the placements cover all cases) is
+still missing, DRAT certificates cover only the 961 CaDiCaL cases plus a random sample, and it has not been read by an expert. See "Limitations".
 
 ## Statement
 
@@ -91,9 +91,12 @@ Machine: Apple M4 Pro, about 2.1 CPU hours in total.
 ## Limitations
 
 - **Partial cross-check of the fast path.** For c = 10 and c = 11 the fast table path of `pair3` was compared line by line with the slower `pair.cpp` only on the first 2,000,000 placements (a later spot check of three further shards also agreed); c = 8, 9, 12 were compared in full.
-- **No DRAT certificates.** Stage 1 and 2 conflicts are decided by my own C code; the 961 CaDiCaL runs did not
-  store proofs. Planned: short RUP proofs per placement checked with drat-trim, or at least a large random sample
-  checked with CaDiCaL + drat-trim.
+- **DRAT certificates only partly.** The 961 stage-3 placements were re-solved with CaDiCaL 3.0.1 and every proof was
+  checked by drat-trim: 961/961 VERIFIED (`drat/resid961.tsv`). A random sample of 1,000 placements closed by stage 2
+  (seed 20261116) was certified the same way: 1,000/1,000 VERIFIED (`drat/s2_1000.tsv`). Proof files (about 1.8 GB in
+  total) were deleted after checking; sizes and sha256 are in the tables, and `drat/run.py` regenerates them in minutes.
+  The remaining roughly 4.8e9 placements closed by stages 1 and 2 are decided by my own C code without certificates.
+  A DRAT check only certifies that the generated CNF is unsatisfiable, not that the CNF encodes the placement correctly.
 - **Covering argument not yet written up.** That every counterexample appears as one of the placements (in particular
   the double-coset reduction and the Burnside treatment of the u, v swap) is argued in our notes but not yet written
   as a proof and not independently checked.

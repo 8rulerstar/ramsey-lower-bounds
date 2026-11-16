@@ -24,7 +24,7 @@ It is not a bound.
 | statement | effect on bounds | method | folder |
 |---|---|---|---|
 | No SRG(45,22,10,11) is a (5,5)-graph; more generally no (5,5)-graph on 45 vertices has a vertex of degree 22 whose neighbours have the degrees and codegrees they would have in an SRG(45,22,10,11) (Theorem 2 in the folder) | none (43 <= R(5,5) <= 46 unchanged) | local Gram identity, exhaustive gluing over McKay's lists (912 CPU hours), exact determinant test | [`r55-srg45`](r55-srg45) |
-| (24,24) extremal-pair lemma: in a (5,5,45)-colouring, two vertices of red degree 24 whose red neighbourhoods have >= 127 edges are not joined by a red edge (computation complete; written covering argument and DRAT certificates pending) | none (43 <= R(5,5) <= 46 unchanged) | exhaustive check of 4,835,956,732 placements (propagation, failed-literal probing, CaDiCaL), independent engine on 100,000 samples | [`r55-pair2424`](r55-pair2424) |
+| (24,24) extremal-pair lemma: in a (5,5,45)-colouring, two vertices of red degree 24 whose red neighbourhoods have >= 127 edges are not joined by a red edge (computation complete; written covering argument pending; DRAT certificates for the 961 SAT-solver cases and a 1,000-placement sample) | none (43 <= R(5,5) <= 46 unchanged) | exhaustive check of 4,835,956,732 placements (propagation, failed-literal probing, CaDiCaL), independent engine on 100,000 samples | [`r55-pair2424`](r55-pair2424) |
 
 This is not a bound. It rules out one natural family of highly regular candidates for a (5,5)-graph on 45 vertices. The proof is
 computer-assisted and has not yet been read by an expert. The statement and proof are in
