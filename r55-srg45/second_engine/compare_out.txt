@@ -1,0 +1,3 @@
+pairs covered 40453 pairs with window (mine) 454 orig window pairs not yet covered 0
+mismatches 0 []
+distinct window graphs (iso) 52 square dets 0 zero dets 0 neg 0
