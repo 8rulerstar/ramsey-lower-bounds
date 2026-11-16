@@ -22,6 +22,6 @@ parts, graphs published by other authors: the Exoo-Tatarevic (6,7)-graph on 114 
 covered by this license; they are included as mathematical data with their sources named in the folder READMEs. Credit the
 original authors when you use them. Files from google-research are under the Apache License 2.0 (r7-16/LICENSES).
 
-The files in r55-srg45/data (K/, B/, mckay/) are copies of or selections from the Ramsey graph lists of Brendan D. McKay
+The files in r55-srg45/data (K/, B/, mckay/), r55-pair2424/d24_e127.g6 and r55-pair2424/data/r55_42some.g6 are copies of or selections from the Ramsey graph lists of Brendan D. McKay
 (https://users.cecs.anu.edu.au/~bdm/data/ramsey.html). They are not covered by this license; see that page for their terms
 and credit B. D. McKay when you use them.

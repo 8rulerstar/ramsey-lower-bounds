@@ -1,0 +1,37 @@
+{
+ "8": {
+  "nK": 11,
+  "pointed": 44,
+  "ordered_pairs": 436,
+  "ordered_configs": 11382,
+  "unordered_configs": 5928
+ },
+ "9": {
+  "nK": 57,
+  "pointed": 3197,
+  "ordered_pairs": 1882493,
+  "ordered_configs": 9169195,
+  "unordered_configs": 4591890
+ },
+ "10": {
+  "nK": 109,
+  "pointed": 33500,
+  "ordered_pairs": 151978154,
+  "ordered_configs": 347321420,
+  "unordered_configs": 173715603
+ },
+ "11": {
+  "nK": 61,
+  "pointed": 59694,
+  "ordered_pairs": 848373770,
+  "ordered_configs": 9311338655,
+  "unordered_configs": 4655830437
+ },
+ "12": {
+  "nK": 8,
+  "pointed": 1234,
+  "ordered_pairs": 367366,
+  "ordered_configs": 3615905,
+  "unordered_configs": 1812874
+ }
+}
