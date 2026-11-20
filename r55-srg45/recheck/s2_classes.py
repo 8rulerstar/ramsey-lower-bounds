@@ -50,20 +50,31 @@ main = []
 for l in list(open(os.path.join(PUB, 'results', 'window_solutions.tsv')))[1:]:
     p = l.rstrip('\n').split('\t'); main.append((p[0], int(p[1]), build(p[0], int(p[1]), list(map(int, p[2].split()))), int(p[8]), p[9]))
 # second engine: all labelled window solutions, per pair
-lab = collections.defaultdict(list); covered = set()
-for f in glob.glob(os.path.join(IND, 'out', '*.txt')):
+lab_g6 = {}; covered = set(); dup = dup_same = 0
+# A few pairs are covered by two output files (a range file and a single-pair rerun).
+# Count each pair once, from the first file in sorted order, and check the repeat lists the same solutions.
+for f in sorted(glob.glob(os.path.join(IND, 'out', '*.txt'))):
     if not os.path.exists(f + '.done'): continue
     job, off, n = os.path.basename(f)[:-4].rsplit('_', 2); off = int(off)
+    R, Wf = set(), collections.defaultdict(list)
     for l in open(f):
         p = l.split()
-        if p and p[0] == 'R': covered.add((job, off + int(p[1])))
-        if p and p[0] == 'W': lab[(job, off + int(p[1]))].append(g6dec(p[2]))
+        if p and p[0] == 'R': R.add((job, off + int(p[1])))
+        if p and p[0] == 'W': Wf[(job, off + int(p[1]))].append(p[2])
+    for k in sorted(set(R) | set(Wf)):
+        if k in covered:
+            dup += 1; dup_same += sorted(Wf.get(k, [])) == sorted(lab_g6.get(k, []))
+            continue
+        if k in R: covered.add(k)
+        if k in Wf: lab_g6[k] = Wf[k]
+lab = {k: [g6dec(s) for s in v] for k, v in lab_g6.items()}
 winpairs = sorted(set((j, i) for j, i, *_ in main))
 S = open(os.path.join(HERE, 'out', 'classes_summary.txt'), 'w')
 def P(*a): print(*a); print(*a, file=S); S.flush()
 P(f'main engine window solutions {len(main)} in {len(winpairs)} pairs; second engine pairs covered {len(covered)}, '
   f'window pairs covered {sum(1 for k in winpairs if k in covered)}, pairs with labelled windows {len(lab)}, labelled windows {sum(map(len, lab.values()))}')
 P(f'second-engine window pairs outside the 454: {sorted(set(lab) - set(winpairs))[:5]}')
+P(f'pairs covered by two output files: {dup}, repeat lists identical: {dup_same}; each pair counted once')
 # classes
 cls = {}; order = []
 def cid(A):
