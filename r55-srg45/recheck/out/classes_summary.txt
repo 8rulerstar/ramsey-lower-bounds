@@ -1,0 +1,12 @@
+main engine window solutions 799 in 454 pairs; second engine pairs covered 40453, window pairs covered 454, pairs with labelled windows 454, labelled windows 2451
+second-engine window pairs outside the 454: []
+799 main solutions: exact window (M PSD) 799, positive definite 799, det equal to window_solutions.tsv 799; classes 52
+labelled solutions of the 454 pairs 2451, exact window 2451; classes 52; classes equal to main classes True
+Aut(K) x Aut(B) orbits (rooted iso classes per pair), summed over the 454 pairs: 488
+main engine (first cone up to Aut(K)): 799; second engine (labelled): 2451
+pairs where #orbits <= #main <= #labelled fails: 0
+sum over classes of Aut(A)-orbits of roots w with e(N(w)) in {15,16,18,19}: 488 (should equal the Aut(K) x Aut(B) orbit total 488: True)
+classes with exact window 52, positive definite 52, square det 0
+det values distinct 52; |Aut| distribution [(1, 43), (2, 9)]
+multiset of the 52 dets equal to indep/dets.txt: True
+bad counters {}
