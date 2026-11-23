@@ -13,7 +13,6 @@ It is not a bound.
 ## Main results (new lower bounds)
 
 - **R(7,16) >= 708** (DS1 rev. 18: 629) and **R(8,19) >= 1429** (1237), from theorem D (heptagon gluing).
-- **R(8,12) >= 521** (google-research: 511), from theorem D1.
 - **R(6,16) >= 454** (434), **R(7,17) >= 736** (729), **R(7,19) >= 919** (908), from triple gluing (theorem H); also R(7,18) >= 827 (797).
 - **R(8,18) >= 1133** (1049; google-research 1052), from theorem DG.
 - In cells the survey does not list: **R(8,25) >= 2449** (2049 is the best value I could derive from published results),
@@ -53,7 +52,6 @@ folder has the statement and a written proof; the proofs have not yet been read 
 | R(8,25) >= 2449 | not in DS1 rev. 18 (2049, best value I could derive) | 2448 vertices, theorem D12, twelve copies of the 204-vertex (7,7)-graph H204 | [`twelve-copies`](twelve-copies) |
 | R(8,19) >= 1429 | 1237 | 1428 vertices, theorem D, three copies of H204c (the complement of H204) | [`seven-copies`](seven-copies) |
 | R(7,16) >= 708 | 629 | 707 vertices, theorem D, three copies of P(101) | [`seven-copies`](seven-copies) |
-| R(8,12) >= 521 | 511 (google-research) | 520 vertices, theorem D1, H204 and a (7,6)-graph sharing P(101) | [`r8-12`](r8-12) |
 | R(8,18) >= 1133 | 1049; 1052 (google-research) | 1132 vertices, theorem DG: H204 as a layer on four positions and a (7,6)-graph as a side, glued along P(101) | [`general-gluing`](general-gluing) |
 | R(7,20) >= 933 | not in DS1 rev. 18 (931 from known results) | 932 vertices, theorem H | [`triple-gluing`](triple-gluing) |
 | R(7,19) >= 919 | 908 | 918 vertices, theorem H | [`triple-gluing`](triple-gluing) |
@@ -92,7 +90,7 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
   in: Computational results on classical Ramsey numbers, v1.5, folder `r55-srg45`.
 
 <details>
-<summary>Earlier bounds, now superseded</summary>
+<summary>Earlier bounds, now superseded or not new</summary>
 
 | bound | superseded by | folder |
 |---|---|---|
@@ -100,7 +98,8 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
 | R(8,19) >= 1267 | 1429 | [`triple-gluing`](triple-gluing) |
 | R(7,18) >= 826 | 827 | [`triple-gluing`](triple-gluing) |
 | R(8,18) >= 1054 | 1133 | [`r8-18`](r8-18) |
-| R(7,16) >= 649 | 708 | [`r7-16`](r7-16) (first published in [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16), 2026-11-10) |
+| R(7,16) >= 649 | 708 | [`r7-16`](r7-16) (first published in [ramsey-r7-16](https://github.com/8rulerstar/ramsey-r7-16), 2026-11-09) |
+| R(8,12) >= 521 | not a record when published: [quantavane-ramsey-records](https://github.com/arhancanli/quantavane-ramsey-records) had 519 (2026-11-03) and 523 (2026-11-06) | [`r8-12`](r8-12) |
 
 </details>
 

@@ -1,6 +1,10 @@
 # R(8,12) >= 521
 
-The best lower bound I know is R(8,12) >= 511 (google-research, ramsey_number_bounds, 2026); in DS1 rev. 18 Table Ia
+**Correction (2026-11-23):** this is not a new bound. [quantavane-ramsey-records](https://github.com/arhancanli/quantavane-ramsey-records)
+published R(8,12) >= 519 on 2026-11-03 and R(8,12) >= 523 on 2026-11-06, before this folder (2026-11-12). I missed them; the
+construction (theorem D1) and the checks below are unchanged.
+
+When this folder was written, the best lower bound I knew was R(8,12) >= 511 (google-research, ramsey_number_bounds, 2026); in DS1 rev. 18 Table Ia
 the R(8,12) cell has no lower bound printed, as far as I can read the table. The graph `R8_12_520.txt` has 520 vertices, no K_8 and no independent
 set of size 12.
 
