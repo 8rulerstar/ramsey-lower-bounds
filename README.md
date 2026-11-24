@@ -90,6 +90,9 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
 - v1.5 (2026-11-14), [10.5281/zenodo.24209919](https://doi.org/10.5281/zenodo.24209919): the nonexistence result for SRG(45,22,10,11) in `r55-srg45`. To cite that result alone, cite
   the v1.5 version DOI above and name the folder: B. Jang, *No strongly regular graph SRG(45,22,10,11) is a (5,5)-Ramsey graph*,
   in: Computational results on classical Ramsey numbers, v1.5, folder `r55-srg45`.
+- v1.6 (2026-11-16), [10.5281/zenodo.24270339](https://doi.org/10.5281/zenodo.24270339): SRG(45,22,10,11) second engine cross-check.
+- v1.7 (2026-11-20), [10.5281/zenodo.24383617](https://doi.org/10.5281/zenodo.24383617): SRG(45,22,10,11) recount of the 52 window classes (its note's count 2,451 was corrected to 2,392 in v1.8).
+- v1.8 (2026-11-24), [10.5281/zenodo.24494057](https://doi.org/10.5281/zenodo.24494057): `r55-aut11` (no (5,5)-graph on 45 vertices with an order-11 automorphism with one fixed point) and `r55-srg45/audit454` (SAT recount of the 454 positive pairs).
 
 <details>
 <summary>Earlier bounds, now superseded or not new</summary>
