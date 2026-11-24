@@ -1,0 +1,60 @@
+{
+  "job": "K68_e28_76000",
+  "idx": 252,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JNOc]OfF\\{_",
+  "enumerated": 10,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwDrXqUcfKwRsKwPP[Z`kbWQ[]?zPH^G",
+      1005101973347021
+    ],
+    [
+      "UsbDMUtudwNIE{LalcyIsQqOa{Zo[aha[m?zCX^G",
+      5616943931857709
+    ],
+    [
+      "UsbDMUtudwFRUUXaekxFcEePC{W|KbRA\\s?zQP^G",
+      2534806737089
+    ],
+    [
+      "UsbDMUtudwNH[[VAdqwUsWqPC{ZkK_ta[k_zCX^G",
+      4414160273957456
+    ],
+    [
+      "UsbDMUtudwA|H{NAjIy`sRWOg{ZQ[bca[]?zW`^G",
+      252968832659664
+    ],
+    [
+      "UsbDMUtudwJbMMXch[yJSFEOb[W}KbbA\\i?zKH^G",
+      2534806737089
+    ],
+    [
+      "UsbDMUtudwIrXkNAjKwbsRWOg{ZQ[bca[]?zGp^G",
+      1005101973347021
+    ],
+    [
+      "UsbDMUtudwNDFYRcmWxDsLKPD[Zok`UQ\\U?zAX^G",
+      5616943931857709
+    ],
+    [
+      "UsbDMUtudwNEYYMcipwhsXKOb[Z[K_yQ\\R?zAX^G",
+      4414160273957456
+    ],
+    [
+      "UsbDMUtudw@}PyUcfDxQsKwPP[Z`kbWQ[]?zX@^G",
+      252968832659664
+    ]
+  ],
+  "blocked_cnf_sha256": "edb8d1e19030b623bd46113d8aa21319b5109dca762e95d83d4f10d44ee88391",
+  "drat_sha256": "f251641f50a6cb4586d0ef81320d33cc859edad9e00ff3f14c997951d0be08f0",
+  "drat_bytes": 10064382,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 14.46,
+    "total_wall_seconds": 25.254,
+    "output": "K68_e28_76000 252 10 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated f251641f50a6cb4586d0ef81320d33cc859edad9e00ff3f14c997951d0be08f0"
+  }
+}

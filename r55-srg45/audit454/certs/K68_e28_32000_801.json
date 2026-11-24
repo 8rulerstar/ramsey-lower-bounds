@@ -1,0 +1,108 @@
+{
+  "job": "K68_e28_32000",
+  "idx": 801,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JCHc~HXMy|?",
+  "enumerated": 22,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwLxJkI]JQ_kqTQopcz_mOfDdK`vYAnO",
+      -624934905072511
+    ],
+    [
+      "UsbDMUtudwLxB{I]JQ_kqTQopcz_mPdDdK`vYAnO",
+      -407803677623991
+    ],
+    [
+      "UsbDMUtudwFlSyZWMIapaYEpMCwkmOYTcqHvGknO",
+      13177629098708481
+    ],
+    [
+      "UsbDMUtudwNkRkBuAxb_qKMoiSzoMPdDdD`vQQnO",
+      699322864889
+    ],
+    [
+      "UsbDMUtudwH|LqZEMD`xAYWoiSwdmOQtdR@vTCnO",
+      13760910909751104
+    ],
+    [
+      "UsbDMUtudwMuDyS]F`_[qIkpHczO]QYDcr@v[CnO",
+      -407803677623991
+    ],
+    [
+      "UsbDMUtudwMuTqS]F`_[qIkpHczO]OZDcr@v[CnO",
+      -624934905072511
+    ],
+    [
+      "UsbDMUtudwE}Rk[eLIauA[WpSKwY]O`tck`vIanO",
+      13760910909751104
+    ],
+    [
+      "UsbDMUtudwEzPu[wLIasa]ApScwXmObTckHvIgnO",
+      6869071277427249
+    ],
+    [
+      "UsbDMUtudwEzRq[wLIasa[EpScwXmObTckHvIgnO",
+      5815618989264909
+    ],
+    [
+      "UsbDMUtudwEzPu[kLIauA]ApScwXmObTckHvIgnO",
+      -3919626900957031
+    ],
+    [
+      "UsbDMUtudwEzRe[kLIauA[QpScwZMO`tckHvIgnO",
+      14352364335987029
+    ],
+    [
+      "UsbDMUtudwEzPu[kLIauA]ApScwZMO`tckHvIgnO",
+      23538044313512289
+    ],
+    [
+      "UsbDMUtudwN[LqDm@ubOqQUpSKzoMQYDcb`vKKnO",
+      699322864889
+    ],
+    [
+      "UsbDMUtudwHvLkZWMD`wQYEojCwe]ORddQPvTOnO",
+      5815618989264909
+    ],
+    [
+      "UsbDMUtudwHvLeZQMD`xAYKojCwfMOQtdQPvTOnO",
+      14352364335987029
+    ],
+    [
+      "UsbDMUtudwHvHmZQMD`xA]CojCwfMOQtdQPvTOnO",
+      23538044313512289
+    ],
+    [
+      "UsbDMUtudwHvHmZQMD`xA]CojCwe]ORddQPvTOnO",
+      -3919626900957031
+    ],
+    [
+      "UsbDMUtudwHvHmZWMD`wQ]CojCwe]ORddQPvTOnO",
+      6869071277427249
+    ],
+    [
+      "UsbDMUtudwLrNEFeANajA[gpwCyRMR@dcbHvBonO",
+      -16423931834396911
+    ],
+    [
+      "UsbDMUtudwJ]J[[wLD`qQ[EouCw[]OdddKPvPQnO",
+      13177629098708481
+    ],
+    [
+      "UsbDMUtudwMrUeFe@N`VAZOpwCxbMRATdCpvDgnO",
+      -16423931834396911
+    ]
+  ],
+  "blocked_cnf_sha256": "ec7b4eb12602d9ab867c60941020af5877865ff0838579fcdbe284869346dac2",
+  "drat_sha256": "079e4bf940168526a7512608482d75da527988a38b2715a324f7e2be89b819f7",
+  "drat_bytes": 6615025,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 10.102,
+    "total_wall_seconds": 16.344,
+    "output": "K68_e28_32000 801 22 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 079e4bf940168526a7512608482d75da527988a38b2715a324f7e2be89b819f7"
+  }
+}

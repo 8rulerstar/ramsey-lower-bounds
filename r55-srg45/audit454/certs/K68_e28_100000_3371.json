@@ -1,0 +1,132 @@
+{
+  "job": "K68_e28_100000",
+  "idx": 3371,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "J`S\\ClfMq\\_",
+  "enumerated": 28,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwNM^`TUE[JQTSeLaL?XXXPe[MPuDWfW",
+      17025761435591249
+    ],
+    [
+      "UsbDMUtudwNL^`ImHkJ`dJELcT?ehYaU[UHuAwfW",
+      17025761435591249
+    ],
+    [
+      "UsbDMUtudwLtU\\NED[JoTPULhD?cxWmE\\S`uGkfW",
+      22924141056695681
+    ],
+    [
+      "UsbDMUtudwNY]JJUK[IKtFKK]DBGXZaE[OxuAwfW",
+      1884946236559661
+    ],
+    [
+      "UsbDMUtudwMyMZUeIkJodGmLod?WxW\\E[j@uPQfW",
+      22924141056695681
+    ],
+    [
+      "UsbDMUtudwNU^BEuIkJPdDeLCl@QXZAe[m@uCwfW",
+      -156647064143779
+    ],
+    [
+      "UsbDMUtudwMl]dQ]EUIeTREKbT?{HX`U\\k@uBWfW",
+      -1897097159743984
+    ],
+    [
+      "UsbDMUtudwNk]dQ]EUIeTREKbT?{HX`U\\cHuBWfW",
+      -2415475833915771
+    ],
+    [
+      "UsbDMUtudwL]^BK]HhHXdKeLCl?{HYQe\\q@uCwfW",
+      -1897097159743984
+    ],
+    [
+      "UsbDMUtudwFN\\p]cBXIpdHkKMdAGxZ_U\\``uBQfW",
+      -274504710207376
+    ],
+    [
+      "UsbDMUtudwFN\\p]cBXIddJKKMdAGxZ_U\\``uBQfW",
+      6163630740874541
+    ],
+    [
+      "UsbDMUtudwNd]TSmKkHKtEqK]DBChZPE[HXuDWfW",
+      1884946236559661
+    ],
+    [
+      "UsbDMUtudwNRVp\\KCyHXTE[KJdAHXXoU\\PHuWcfW",
+      3470011085327369
+    ],
+    [
+      "UsbDMUtudwF]^BK]HhHXdSeLCl?{HZQE\\aPuCwfW",
+      -2341462776372819
+    ],
+    [
+      "UsbDMUtudwJl]dQ]EUIeTJEKbT?{HZ`E\\cHuBWfW",
+      -2341462776372819
+    ],
+    [
+      "UsbDMUtudwNR^PI]KqGxdYILKd?fHWkU\\PHuGsfW",
+      5497049523016161
+    ],
+    [
+      "UsbDMUtudwJ]]bFUMKIHtJcKkdAgXZaE[aXuAwfW",
+      2336876597751201
+    ],
+    [
+      "UsbDMUtudwJ]^BK]HhHXdKeLCl?{HZQE\\aPuCwfW",
+      247203069893109
+    ],
+    [
+      "UsbDMUtudwJ]NbK]HhHXd[ELCl?{HZQE\\aPuCwfW",
+      -2415475833915771
+    ],
+    [
+      "UsbDMUtudwFlVdQ]EUIeTYEKbT?{HZ`E\\cHuBWfW",
+      -2415475833915771
+    ],
+    [
+      "UsbDMUtudwFl]dQ]EUIeTREKbT?{HZ`E\\cHuBWfW",
+      247203069893109
+    ],
+    [
+      "UsbDMUtudwNh]dFMD[JaTBeKbTA`hZ@U\\U@uBWfW",
+      -156647064143779
+    ],
+    [
+      "UsbDMUtudwN[^BK]HhHXdKeLCl?{HYQe\\aPuCwfW",
+      -2415475833915771
+    ],
+    [
+      "UsbDMUtudwFl^DEmLKHEtTaLRD@ShZPE\\CXuDWfW",
+      2336876597751201
+    ],
+    [
+      "UsbDMUtudwNbNhYqGtIedEYKTd@EhYoe[gpuXAfW",
+      3470011085327369
+    ],
+    [
+      "UsbDMUtudwNb]hS]KpGuT[SKrD?ZHW[e[gpuPIfW",
+      5497049523016161
+    ],
+    [
+      "UsbDMUtudwJNZh^ABeHqTPqKVD@CxZOe\\``uCkfW",
+      -274504710207376
+    ],
+    [
+      "UsbDMUtudwJNZh^ABeHYTSqKVD@CxZOe\\``uCkfW",
+      6163630740874541
+    ]
+  ],
+  "blocked_cnf_sha256": "c0d4c0cfef34bb0565450403ea80ac40ea182dadd89f8a2a0d101222ccb001f9",
+  "drat_sha256": "4c0a5b2797da8535b5be932fca6076b0a9550d2be8406c71f7f130a6bf56b5d3",
+  "drat_bytes": 17628432,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 74.402,
+    "total_wall_seconds": 114.725,
+    "output": "K68_e28_100000 3371 28 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 4c0a5b2797da8535b5be932fca6076b0a9550d2be8406c71f7f130a6bf56b5d3"
+  }
+}

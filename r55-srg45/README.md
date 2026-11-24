@@ -47,6 +47,8 @@ The proof is computer-assisted. Statement, lemmas and proofs: [NOTE.md](NOTE.md)
 | CPU time of the gluing | 912 hours | results/ledger.txt |
 | window solutions with perfect-square determinant | 0 (no zero determinant either) | results/window_solutions.tsv, results/window_check.txt |
 
+- [`audit454/`](audit454): a SAT recount, with a separately written encoder, of the 454 pairs that have window solutions. The ledger ends with "remaining 454 0". 137 pairs have replayable DRAT certificates; 317 rest on verified logs from 2026-11-20 whose proofs were not archived. The other 6,313,084 pairs are not checked here.
+
 Raw outputs of the run (one file per job, 79 MB) are attached to the v1.5 release of this repository as
 `srg45_raw_outputs.tar.gz`; its checksum is in `results/raw_archive.sha256`.
 
@@ -79,6 +81,7 @@ Notes on reproduction:
 - `pipeline/`: filters, job lists, run script, checks.
 - `data/`: K classes, filtered B lists, job lists, control instance, McKay's (3,5,10) list.
 - `results/`: ledger, per-job summary with checksums, all window solutions with exact determinants, cross-check logs.
+- `audit454/`: recount of the 454 positive pairs (encoder, ledgers, certificates).
 
 ## AI assistance
 

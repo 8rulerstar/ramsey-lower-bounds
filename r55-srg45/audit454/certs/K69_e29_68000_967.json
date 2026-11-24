@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_68000",
+  "idx": 967,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "Jman@oZHyx_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDwMIBtKkmSpUWRLTcnAkR`P`lHHNDQmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLIDtIklSpeWTLTcnA[R```lPHNBQmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLHDrIilSpegTJTcvA[b``PlPPNBSmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMHBrKimSpUgRJTcvAkb`PPlHPNDSmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLEDlIslWpdWTTTdNA[R`a`lOhNBImW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMEBlKsmWpTWRTTdNAkR`Q`lGhNDImW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLDDjIqlWpdgTRTdVA[b`aPlOpNBKmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMDBjKqmWpTgRRTdVAkb`QPlGpNDKmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMHBrTSmaqXWItTav@lBaQ`kghNCimW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLHDrRSlaqhWKtTav@\\Baa`kohNAimW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMIBtTQm`qXgIrTan@lBaQPkgpNCkmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLIDtRQl`qhgKrTan@\\BaaPkopNAkmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLEDlRIl`qigKjTbN@]Ba`PkpPNAsmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMEBlTIm`qYgIjTbN@mBaPPkhPNCsmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwLDDjRKlaqiWKlTbV@]Ba``kpHNAqmW",
+      975827447648064
+    ],
+    [
+      "UsbDMvYnDwMDBjTKmaqYWIlTbV@mBaP`khHNCqmW",
+      975827447648064
+    ]
+  ],
+  "blocked_cnf_sha256": "365daee6fa62d3201abd2018a3e0272f1e43c73b4b6a05936d41a945bcfc2354",
+  "drat_sha256": "328ed422886af5b05737ff5bfad96347ecfefa6e32e8ad68401503f585643bbf",
+  "drat_bytes": 39250118,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 91.817,
+    "total_wall_seconds": 152.031,
+    "output": "K69_e29_68000 967 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, regenerated 328ed422886af5b05737ff5bfad96347ecfefa6e32e8ad68401503f585643bbf"
+  }
+}

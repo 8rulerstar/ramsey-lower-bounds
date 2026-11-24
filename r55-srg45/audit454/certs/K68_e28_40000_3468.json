@@ -1,0 +1,76 @@
+{
+  "job": "K68_e28_40000",
+  "idx": 3468,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JEOlRETN]^?",
+  "enumerated": 14,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwJb]EIuB{rkCD[TpdQHUHCxTg`zApfo",
+      2491020707662289
+    ],
+    [
+      "UsbDMUtudwJb]cIuB{rgSD[TpdQHUHCxTg`zApfo",
+      2269285351538480
+    ],
+    [
+      "UsbDMUtudwKlFwIuNQrPSDMTO|QwEG]HTp@zGdfo",
+      83076612248421
+    ],
+    [
+      "UsbDMUtudwFR]ETMB{r[CAyThdPEeIGxTp@zDHfo",
+      2491020707662289
+    ],
+    [
+      "UsbDMUtudwFR^ATMB{rScAyThdPEeIGxTp@zDHfo",
+      2269285351538480
+    ],
+    [
+      "UsbDMUtudwJ[M[RYFprMCCmTo\\PEeIHhTw@zBBfo",
+      5766295308944049
+    ],
+    [
+      "UsbDMUtudwMd]IWuJYrKcFESH|QXEH[HSp`zCpfo",
+      14694505284579461
+    ],
+    [
+      "UsbDMUtudwLY]SXMFdrKSEeSP|PeEIkHTH`zBHfo",
+      14694505284579461
+    ],
+    [
+      "UsbDMUtudwH]JsRYFdrbCCuTqLP`eIkHTgPzBBfo",
+      436463947359341
+    ],
+    [
+      "UsbDMUtudwHl]II{NQoVcTKTo\\QiEGeXSkHzH`fo",
+      28131373673050736
+    ],
+    [
+      "UsbDMUtudwK]FwTMN`racAuSh\\PsEGlHTg`zPBfo",
+      83076612248421
+    ],
+    [
+      "UsbDMUtudwE]]STYN`ojSIqTg\\PTEGXhTQPzP`fo",
+      28131373673050736
+    ],
+    [
+      "UsbDMUtudwElTiK{JYrRCBMTkTQQUH[HToHzCdfo",
+      436463947359341
+    ],
+    [
+      "UsbDMUtudwFkUYK{JqrLCBUTg\\QHUHEXTw@zCdfo",
+      5766295308944049
+    ]
+  ],
+  "blocked_cnf_sha256": "68fb924705fd7e3e62aceb1eb0ec4eb30505b6dcd85e40214c362889df17f426",
+  "drat_sha256": "999fb4ac4475fc52175e300f4f14fc32fc99400f2ae9cf6b5e7ed2042c40b2f4",
+  "drat_bytes": 13547908,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 24.449,
+    "total_wall_seconds": 40.057,
+    "output": "K68_e28_40000 3468 14 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 999fb4ac4475fc52175e300f4f14fc32fc99400f2ae9cf6b5e7ed2042c40b2f4"
+  }
+}

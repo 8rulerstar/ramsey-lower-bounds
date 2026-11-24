@@ -1,0 +1,32 @@
+{
+  "job": "K277_e26_52000",
+  "idx": 3942,
+  "K_g6": "Ig?gkDXMO",
+  "B_g6": "Jh`[`SLoxl_",
+  "enumerated": 3,
+  "sols_g6_and_exact_det": [
+    [
+      "U|aCkV@jKxDyS^ZQeyJsWUSk[kaNAhHotqEFQgZW",
+      -1675679687995291
+    ],
+    [
+      "U|aCkV@jKxDyS^ZQe]JsWUSk[kaNAhHotqEFR_ZW",
+      351827642849309
+    ],
+    [
+      "U|aCkV@jKxHyVJ^_cnJBwLolpK`UQiw_sQuFQgZW",
+      29559542045769329
+    ]
+  ],
+  "blocked_cnf_sha256": "1eee575eb36a5aa03bd6cebffbcd0f1378f8d9d9de2971af64d2e793f11554cc",
+  "drat_sha256": "a953f985fc8674f7746f9573bb5e8c33b11c3a1285019962f1c9b1efe953ea0e",
+  "drat_bytes": 7520418,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 1,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 9.922,
+    "total_wall_seconds": 16.66,
+    "output": "K277_e26_52000 3942 3 valid exact arithmetic witnesses, 1 window, fixed-CNF DRAT verified, regenerated a953f985fc8674f7746f9573bb5e8c33b11c3a1285019962f1c9b1efe953ea0e"
+  }
+}

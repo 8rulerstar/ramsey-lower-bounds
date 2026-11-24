@@ -1,0 +1,24 @@
+{
+  "job": "K279_e26_8000",
+  "idx": 1993,
+  "K_g6": "IgCPSLKKW",
+  "B_g6": "JDHJHVPVK}?",
+  "enumerated": 1,
+  "sols_g6_and_exact_det": [
+    [
+      "U|aKSjBhcpenZcYYHYhtAPYcrJIkailLCXYxZ@N_",
+      41789967532016
+    ]
+  ],
+  "blocked_cnf_sha256": "d3174806d49e3ae005d377ad2efc0a1ed05370f356dfc32fdb21da3a4cae10a3",
+  "drat_sha256": "7997d2abc780599eb3853d13c21557e7262d6d51a8665fdad82889592b446d65",
+  "drat_bytes": 1598681,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 1,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 1.3,
+    "total_wall_seconds": 2.318,
+    "output": "K279_e26_8000 1993 1 valid exact arithmetic witnesses, 1 window, fixed-CNF DRAT verified, regenerated 7997d2abc780599eb3853d13c21557e7262d6d51a8665fdad82889592b446d65"
+  }
+}

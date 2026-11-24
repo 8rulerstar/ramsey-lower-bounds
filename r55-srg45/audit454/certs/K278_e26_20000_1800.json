@@ -1,0 +1,21 @@
+{
+  "job": "K278_e26_20000",
+  "idx": 1800,
+  "K_g6": "Ig?gsDTMO",
+  "B_g6": "JLEbAWZbm]?",
+  "enumerated": 2,
+  "sols_g6_and_exact_det": [
+    [
+      "U|aCkZ@ikxD]S{^OitiUPVBOkZBocoj`lak\\Hpf_",
+      -995939218983951
+    ],
+    [
+      "U|aCkZ@ikxD]S{^OitiUPRJOkZBocoj`lqK\\Hpf_",
+      106185476952225
+    ]
+  ],
+  "blocked_cnf_sha256": "5cbaf88543f128166dc924193e16412465d3222e9968d2ab6f3c6f97a7b49976",
+  "drat_sha256": "0cf996da49e5df10382726967b2c634dafd3a11e506d39fe6766c2d3e543cfc7",
+  "drat_bytes": 4690090,
+  "drat_result": "VERIFIED"
+}

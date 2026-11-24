@@ -1,0 +1,116 @@
+{
+  "job": "K94_e28_120000",
+  "idx": 2305,
+  "K_g6": "I@Ce]YgTG",
+  "B_g6": "Jw@XQe^Mrw_",
+  "enumerated": 24,
+  "sols_g6_and_exact_det": [
+    [
+      "UseKfNetDSnsPVIrfI@k_[Il\\@OfTIOx|_puBg}G",
+      21987394533806141
+    ],
+    [
+      "UseKfNetDSnhCzYLdwAXOUSkbXQhdHdH|Y@uHE}G",
+      -1163480504390479
+    ],
+    [
+      "UseKfNetDSmy]HBjgu@J_QqlOxRQTHwH{Z@uKE}G",
+      2342706780549069
+    ],
+    [
+      "UseKfNetDSmu]PBrgy@J_QilPXRPTHwH{Y`uKE}G",
+      2342706780549069
+    ],
+    [
+      "UseKfNetDSndCzYTdsAYOUKkaxQidHeH|Y@uHE}G",
+      -1163480504390479
+    ],
+    [
+      "UseKfNetDSfV\\PRLhLBa_HilYHRgdG]H{_xuEo}G",
+      -534680859824595
+    ],
+    [
+      "UseKfNetDSfZ\\HRThLB`_HqlYHRgdG\\H{`XuEg}G",
+      -534680859824595
+    ],
+    [
+      "UseKfNetDSlx]HDlctAFOLSkgxRadIsH{\\@uQE}G",
+      2342706780549069
+    ],
+    [
+      "UseKfNetDSlt]PDtcxAFOLKkhXR`dIsH{[`uQE}G",
+      2342706780549069
+    ],
+    [
+      "UseKfNetDSlVTpNDeY@qO@mku`QpTIYH|@XuYG}G",
+      110386912843746209
+    ],
+    [
+      "UseKfNetDSnsGvTTjHA[OYKkz@OZdH_x|_huDg}G",
+      21987394533806141
+    ],
+    [
+      "UseKfNetDSnwGnTLjDA[OYSky`OZdH_x|`HuDo}G",
+      21987394533806141
+    ],
+    [
+      "UseKfNetDSmfJpUbhhAq_@mlM`PpdHeH{`Xu[G}G",
+      110386912843746209
+    ],
+    [
+      "UseKfNetDSjjYhKreMBPOPsk{PRSTGlH|@XuFG}G",
+      -534680859824595
+    ],
+    [
+      "UseKfNetDSjfYpKjeMBQOPkk{PRSTGmH|?xuFO}G",
+      -534680859824595
+    ],
+    [
+      "UseKfNetDSlZThNDeU@pO@ukv@QqTIXH|?xuYO}G",
+      110386912843746209
+    ],
+    [
+      "UseKfNetDSnwPNIjfE@k_[Ql[`OfTIOx|`PuBo}G",
+      21987394533806141
+    ],
+    [
+      "UseKfNetDSnUB\\[Ris@e_MIlCxPUTIYH{{@uOe}G",
+      -1163480504390479
+    ],
+    [
+      "UseKfNetDSnYB\\[Jiw@d_MQlDXPTTIXH{{@uOe}G",
+      -1163480504390479
+    ],
+    [
+      "UseKfNetDSnFCzZPdsAYOUKkaxQidHeH|Y@uHE}G",
+      13004087783106101
+    ],
+    [
+      "UseKfNetDSnJCzZHdwAXOUSkbXQhdHdH|Y@uHE}G",
+      13004087783106101
+    ],
+    [
+      "UseKfNetDSnJB\\[hiw@d_MQlDXPTTIXH{{@uOe}G",
+      13004087783106101
+    ],
+    [
+      "UseKfNetDSnFB\\[pis@e_MIlCxPUTIYH{{@uOe}G",
+      13004087783106101
+    ],
+    [
+      "UseKfNetDSmjJhUbhdAp_@ulN@PqdHdH{_xu[O}G",
+      110386912843746209
+    ]
+  ],
+  "blocked_cnf_sha256": "02dc9f451af14f26bee7699278d8b8467bd713e6f106a9a6ac8f5570f0ab0336",
+  "drat_sha256": "a74cd51cf6f95ee079d48c0ba611096ecea97336955865b97d70e0c764ca0d2c",
+  "drat_bytes": 4525957,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 4,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 8.636,
+    "total_wall_seconds": 13.468,
+    "output": "K94_e28_120000 2305 24 valid exact arithmetic witnesses, 4 window, fixed-CNF DRAT verified, regenerated a74cd51cf6f95ee079d48c0ba611096ecea97336955865b97d70e0c764ca0d2c"
+  }
+}

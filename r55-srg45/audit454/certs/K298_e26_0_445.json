@@ -1,0 +1,44 @@
+{
+  "job": "K298_e26_0",
+  "idx": 445,
+  "K_g6": "IoDPS?lSo",
+  "B_g6": "J@MakXhsi}?",
+  "enumerated": 6,
+  "sols_g6_and_exact_det": [
+    [
+      "U}aLSj?dlRNhTsG}EiIsRQxOHyglgrXEcyedXAn_",
+      -809501681451199
+    ],
+    [
+      "U}aLSj?dlRNhTsG}EiIsRQxOHyghwrXEcyedX_n_",
+      127392139621296
+    ],
+    [
+      "U}aLSj?dlRNqYqC}FPJIbPxOEyhRWqxEctedUCn_",
+      -809501681451199
+    ],
+    [
+      "U}aLSj?dlRNbTsG}EiIsRQxOHygjWrXEcyedX_n_",
+      -549397565832159
+    ],
+    [
+      "U}aLSj?dlRNbYqC}FPJIbPxOEyhTgqxEctedUOn_",
+      -549397565832159
+    ],
+    [
+      "U}aLSj?dlRNqYqC}FPJIbPxOEyhPwqxEctedUOn_",
+      127392139621296
+    ]
+  ],
+  "blocked_cnf_sha256": "ccc24c9e644591d4cd9041ff40e9357ac1b0b6e874ca8c11ca46ca61c96e68ff",
+  "drat_sha256": "db1006f5f1783106ad387d1827ebcb3f41d1653cc10d87e3fc9ed30fcd9ec187",
+  "drat_bytes": 6005641,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 11.958,
+    "total_wall_seconds": 20.437,
+    "output": "K298_e26_0 445 6 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated db1006f5f1783106ad387d1827ebcb3f41d1653cc10d87e3fc9ed30fcd9ec187"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "job": "K68_e28_48000",
+  "idx": 800,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JGSusm[hZR_",
+  "enumerated": 12,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwDZXqUel`?ZdKwXouo{HYahpClJMGsw",
+      2856971337419705
+    ],
+    [
+      "UsbDMUtudwFLTeUwau@QtYIXrEqWhYIXoqTJJGsw",
+      -5207758802853079
+    ],
+    [
+      "UsbDMUtudwFJ[MRqbU?ZT[aXVErPHZGhoTdJIcsw",
+      -10294873718339331
+    ],
+    [
+      "UsbDMUtudwFb[MRqbU?ZT[aXVErPHZAhoTdJIcsw",
+      -7161603359176816
+    ],
+    [
+      "UsbDMUtudwJMJeNW`xA`t[SXkepcXXDhpKLJSosw",
+      -5207758802853079
+    ],
+    [
+      "UsbDMUtudwJFYULkbh?fdZCWmeraHZCXoJdJTAsw",
+      -10294873718339331
+    ],
+    [
+      "UsbDMUtudwJRYULkbh?fdZCWmeraHZ@XoJdJTAsw",
+      -7161603359176816
+    ],
+    [
+      "UsbDMUtudwIl]W\\ahk?et]CXg]pDhXkHoJLJBKsw",
+      40140560236855661
+    ],
+    [
+      "UsbDMUtudwBZ\\cUqdY?xT]GX`mqHhYiHoeLJIKsw",
+      2029510929791664
+    ],
+    [
+      "UsbDMUtudwBfZaNKid?ud]OX`upEXXTHpETJSQsw",
+      2029510929791664
+    ],
+    [
+      "UsbDMUtudwIfXkNEmQ?fTRWXhMo{HXPXobTJUOsw",
+      2856971337419705
+    ],
+    [
+      "UsbDMUtudwD]]WZce[?Xt]AXo]qIXY[HoStJCqsw",
+      40140560236855661
+    ]
+  ],
+  "blocked_cnf_sha256": "ffd3e3ceb3bb0c678822c3524d17ff8303777c5de2f84f566e1db2ac5a940288",
+  "drat_sha256": "ddae6de93a0c55019d60b54f1fecc887879c22428e1dc90a3eacc46cde531769",
+  "drat_bytes": 9220710,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 12.262,
+    "total_wall_seconds": 21.129,
+    "output": "K68_e28_48000 800 12 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated ddae6de93a0c55019d60b54f1fecc887879c22428e1dc90a3eacc46cde531769"
+  }
+}

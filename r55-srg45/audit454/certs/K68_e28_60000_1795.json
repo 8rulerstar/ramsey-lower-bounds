@@ -1,0 +1,140 @@
+{
+  "job": "K68_e28_60000",
+  "idx": 1795,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JIcQjUfJpx_",
+  "enumerated": 30,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwNuFMIwkLOyXRaGbQiiEj_Y\\gP]Ck]W",
+      45002965599009
+    ],
+    [
+      "UsbDMUtudwM}ZIUKa]RoXJKHPIhKehQY[Z@]Pa]W",
+      10547144824825664
+    ],
+    [
+      "UsbDMUtudwNlIuTEkkRchSMG]AhbEjSI[Kp]Aq]W",
+      -160875636838191
+    ],
+    [
+      "UsbDMUtudwNlIuTEglRch[KG]AhbEjSI[Kp]Aq]W",
+      30062412571736105
+    ],
+    [
+      "UsbDMUtudwNlIuTEidRchW[G]AhbEjSI[Kp]Aq]W",
+      -1878112973650639
+    ],
+    [
+      "UsbDMUtudwNlIuTEikRchWMG]AhbEjSI[Kp]Aq]W",
+      6154456095670256
+    ],
+    [
+      "UsbDMUtudwL|[sMQ`lRohSqGgqiKUi`i[[`]Hc]W",
+      10547144824825664
+    ],
+    [
+      "UsbDMUtudwNlYqTEidRchW[G]AhbEhSi[Kp]Aq]W",
+      -61472570546431
+    ],
+    [
+      "UsbDMUtudwNuFMIwkLOuXRaGbQiiEj_Y\\gP]DK]W",
+      4839535570942809
+    ],
+    [
+      "UsbDMUtudwNr[kPqbpRbHTKH`IgXehRI[XH]Ic]W",
+      709858026823121
+    ],
+    [
+      "UsbDMUtudwN]TMIY`]RWXJaHpAhKeiwI[RH]SK]W",
+      -2089170647437599
+    ],
+    [
+      "UsbDMUtudwN]ZKCmeYRgXWYG]AjaEiWY[JH]BK]W",
+      1110081506531184
+    ],
+    [
+      "UsbDMUtudwNrZQJcbURRHBqH_qgeUibI[Sp][A]W",
+      1970816167367069
+    ],
+    [
+      "UsbDMUtudwNrZQHkbqRRHIqH_qgeUibI[Wp]TA]W",
+      709858026823121
+    ],
+    [
+      "UsbDMUtudwNlIuS[alRchTcHgaiKUhsI[Kp]IQ]W",
+      -2089170647437599
+    ],
+    [
+      "UsbDMUtudwNlIuS[ikRchDeHgaiKUhsI[Kp]IQ]W",
+      74506927620521
+    ],
+    [
+      "UsbDMUtudwNl[qBUhdRShW[G]AjPEhci[Sp]Cq]W",
+      1110081506531184
+    ],
+    [
+      "UsbDMUtudwN]\\KIedYRWXWYG]AiREigY[RH]DK]W",
+      -61472570546431
+    ],
+    [
+      "UsbDMUtudwNrFkZAkiPrHEUH_igeUibI\\aP]Bg]W",
+      24724164895572725
+    ],
+    [
+      "UsbDMUtudwNrDuRKkFOvHIsHDajcEhpI[kH]SQ]W",
+      437931099209241
+    ],
+    [
+      "UsbDMUtudwNxEuTWkMOthLcHCihTEjOi\\oH]BQ]W",
+      45002965599009
+    ],
+    [
+      "UsbDMUtudwNr[kTabhRbHDkH`IgXehRI[JH]YC]W",
+      1970816167367069
+    ],
+    [
+      "UsbDMUtudwNrFq[ckTQrHEMH`QgXehRI\\cH]Do]W",
+      24724164895572725
+    ],
+    [
+      "UsbDMUtudwNxEuTWkMOxhLcHCihTEjOi\\oH]Aq]W",
+      4839535570942809
+    ],
+    [
+      "UsbDMUtudwN]TMIYd[RWXBeHpAhKeiwI[RH]SK]W",
+      74506927620521
+    ],
+    [
+      "UsbDMUtudwN]TMIec]RWXYQG]AiREjgI[RH]DK]W",
+      30062412571736105
+    ],
+    [
+      "UsbDMUtudwN]TMIek[RWXIUG]AiREjgI[RH]DK]W",
+      -160875636838191
+    ],
+    [
+      "UsbDMUtudwN]TMIed[RWXWUG]AiREjgI[RH]DK]W",
+      6154456095670256
+    ],
+    [
+      "UsbDMUtudwN]TMIedYRWXWYG]AiREjgI[RH]DK]W",
+      -1878112973650639
+    ],
+    [
+      "UsbDMUtudwNrBmKqkJOzHTIGbajWEiqI\\QP]IK]W",
+      437931099209241
+    ]
+  ],
+  "blocked_cnf_sha256": "556871166c9811a6bd7454cd458665cb58579cf56ad7a270eb37f09682f7d8eb",
+  "drat_sha256": "0b8585a3d0af8829c57ed67aa642dae0f9bae2031aff2aab46479b8fffc50784",
+  "drat_bytes": 23786768,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 35.655,
+    "total_wall_seconds": 59.208,
+    "output": "K68_e28_60000 1795 30 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 0b8585a3d0af8829c57ed67aa642dae0f9bae2031aff2aab46479b8fffc50784"
+  }
+}

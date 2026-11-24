@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_16000",
+  "idx": 2500,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "JCSeHxNkz{_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDwNiK{BuEsaXTWkOUMHaRqQc|GdfWA~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNiI{DuDsahTWkOMMHQRqac|OdfWA~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNhKyBuEsaXdWiOUUHabqQS|GdfWC~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNhIyDuDsahdWiOMUHQbqaS|OdfWC~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNdKyBmEwaYdWqOUUH`bqPS|HDfWC~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNdIyDmDwaidWqOMUHPbq`S|PDfWC~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNeK{BmEwaYTWsOUMH`RqPc|HDfWA~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNeI{DmDwaiTWsOMMHPRq`c|PDfWA~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNYTUB{Ip`TTXQOUeI`bpQc{gLfWG~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNYRUD{Hp`dTXQOMeIPbpac{oLfWG~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNXRUDyHq`ddXSOMeIPRpaS{oTfWG~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNXTUByIq`TdXSOUeI`RpQS{gTfWG~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNUTMB{Ip`UTXIOVEIabpPc{gLfWO~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNURMD{Hp`eTXIONEIQbp`c{oLfWO~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNTRMDyHq`edXKONEIQRp`S{oTfWO~G",
+      411267142121
+    ],
+    [
+      "UsbDMvYnDwNTTMByIq`UdXKOVEIaRpPS{gTfWO~G",
+      411267142121
+    ]
+  ],
+  "blocked_cnf_sha256": "9899601319068be00e6cd81722038b4d69657fbe5e4283677eb319b6513269a2",
+  "drat_sha256": "b9e581dcccf61942a0364297633d0898acbc04006298e072a2e787dac4ed12f6",
+  "drat_bytes": 8489695,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 10.256,
+    "total_wall_seconds": 17.088,
+    "output": "K69_e29_16000 2500 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, regenerated b9e581dcccf61942a0364297633d0898acbc04006298e072a2e787dac4ed12f6"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "job": "K94_e28_28000",
+  "idx": 2639,
+  "K_g6": "I@Ce]YgTG",
+  "B_g6": "JBeHPLF{Z|?",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UseKfNetDSnYLkNGGxWXx[JDIpOeqYYC\\gNbKO~O",
+      3183064544610621
+    ],
+    [
+      "UseKfNetDSnk]EHMHwYkhIfDIhRaaWZC[QnbKO~O",
+      95192146257245136
+    ],
+    [
+      "UseKfNetDSnk]EHUHsYkhIfDJHR`aWZC[RNbKG~O",
+      95192146257245136
+    ],
+    [
+      "UseKfNetDSndRqUoCuWexYTCtHOXqXdC\\oVbQG~O",
+      3183064544610621
+    ],
+    [
+      "UseKfNetDSm\\RMTcCxYoxB\\Dl@PTQWec\\wFbKG~O",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSm\\RUTcCtYoxB\\Dk`PUQWdc\\wFbKO~O",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSm{UqRQLEXwhQfDohOvAXIc[o^b@g~O",
+      -10337556906613431
+    ],
+    [
+      "UseKfNetDSm{UiRILIXwhQfDpHOvAXHc[o^b@o~O",
+      -10337556906613431
+    ],
+    [
+      "UseKfNetDSn[]EOmEwX[XTFCspRQQWfC[KvbQO~O",
+      95192146257245136
+    ],
+    [
+      "UseKfNetDSn[]EOuEsX[XTFCtPRPQWfC[LVbQG~O",
+      95192146257245136
+    ],
+    [
+      "UseKfNetDSlmKmJaGyXoxCzDr@QhaWYS\\wFbQG~O",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSlmKuJaGuXoxCzDq`QiaWXS\\wFbQO~O",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSnhRiUgCyWdxYLCshOYqXeC\\oVbQO~O",
+      3183064544610621
+    ],
+    [
+      "UseKfNetDSl{NKKkMHYsXLFDhPOzAYDS\\G^b@o~O",
+      -10337556906613431
+    ],
+    [
+      "UseKfNetDSl{NSKsMDYsXLFDgpOzAYES\\G^b@g~O",
+      -10337556906613431
+    ],
+    [
+      "UseKfNetDSnULsNOGtWYx[RDJPOdqYXC\\gNbKG~O",
+      3183064544610621
+    ]
+  ],
+  "blocked_cnf_sha256": "3811659b65f1d1d733265631b1a672a24a744053694b776d40f16947e33f925d",
+  "drat_sha256": "6b3d65bccc0e163bdef73d0c0ad7df0850f486fe93823f091c80952a63a4b249",
+  "drat_bytes": 3692323,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 4,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 6.421,
+    "total_wall_seconds": 10.016,
+    "output": "K94_e28_28000 2639 16 valid exact arithmetic witnesses, 4 window, fixed-CNF DRAT verified, regenerated 6b3d65bccc0e163bdef73d0c0ad7df0850f486fe93823f091c80952a63a4b249"
+  }
+}

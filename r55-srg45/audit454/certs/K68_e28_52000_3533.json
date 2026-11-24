@@ -1,0 +1,116 @@
+{
+  "job": "K68_e28_52000",
+  "idx": 3533,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JGgW{jBXzv?",
+  "enumerated": 24,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwD^PuNKmUAiYFoLgGzWHO`{LqBNAW|o",
+      -858617586549459
+    ],
+    [
+      "UsbDMUtudwNbEmXqdf?zICuLM?ybHPUKL_rN[?|o",
+      -995939218983951
+    ],
+    [
+      "UsbDMUtudwNMTMI{lb?{Y[gKL_weXPKkLgJNSO|o",
+      28779343461405504
+    ],
+    [
+      "UsbDMUtudwInHmUqlh@TiFgLoOzcHOQ{LkBNCW|o",
+      -858617586549459
+    ],
+    [
+      "UsbDMUtudwMjXeUYlk@TiFaLOozcHOQ{KkbNCo|o",
+      -20696825895325371
+    ],
+    [
+      "UsbDMUtudwMlPm]Qlw@[iFILoOychOQ{KibNCW|o",
+      -2023463772635239
+    ],
+    [
+      "UsbDMUtudwMZC}Zad]@rIFaLCozgHOW{LgbNSO|o",
+      -281978039865280
+    ],
+    [
+      "UsbDMUtudwMZC}Zad]@rIFaLcOyhHOW{LgbNSO|o",
+      2318069514816
+    ],
+    [
+      "UsbDMUtudwMrDyYMje?vIJaLp?zBHOQ{L[BNGc|o",
+      3287662243409709
+    ],
+    [
+      "UsbDMUtudwMrTYImbuArIZAKr?zBHOQ{K]BNWC|o",
+      4751491553488845
+    ],
+    [
+      "UsbDMUtudwNMD]YkjR@wYKwLL?yHXPKkLgJNCo|o",
+      19119080644435145
+    ],
+    [
+      "UsbDMUtudwNLIuTYmR?{iZOKR_wXhQK[LoRNIG|o",
+      28779343461405504
+    ],
+    [
+      "UsbDMUtudwNbImTqbf@ZIGuLM?zBHOuKLOrN[?|o",
+      106185476952225
+    ],
+    [
+      "UsbDMUtudwNRFUXkiZ?vIBMKu?xRHQhKL`JNY?|o",
+      -995939218983951
+    ],
+    [
+      "UsbDMUtudwNRS]JkfXArITcKgozBHOmKKkJNPA|o",
+      12178753326247409
+    ],
+    [
+      "UsbDMUtudwLrB{[UfX?zITcLg_zBHO`{KyBNPA|o",
+      3287662243409709
+    ],
+    [
+      "UsbDMUtudwNLA}\\QfbAsiRWKq_xEhQK[LoRNBG|o",
+      19119080644435145
+    ],
+    [
+      "UsbDMUtudwLVXeM[m[AiYFcKhGzWHO`{LRBNBG|o",
+      -20696825895325371
+    ],
+    [
+      "UsbDMUtudwNbI]Tqje@rIJaLPGzBHO\\KLQRNGc|o",
+      12178753326247409
+    ],
+    [
+      "UsbDMUtudwL]Hu]KmsAkYEsLgGxWXO`{LTBNAW|o",
+      -2023463772635239
+    ],
+    [
+      "UsbDMUtudwLfB]\\cilArIFcKbGzSHOc{LpBNIG|o",
+      -281978039865280
+    ],
+    [
+      "UsbDMUtudwLfB]\\cilArIFcLaGxUHOc{LpBNIG|o",
+      2318069514816
+    ],
+    [
+      "UsbDMUtudwNRTUJkbZAfIPMKu?zBHOxKKhJNY?|o",
+      106185476952225
+    ],
+    [
+      "UsbDMUtudwLrI{TUbx@rI[cLK_zBHO`{K]BNWA|o",
+      4751491553488845
+    ]
+  ],
+  "blocked_cnf_sha256": "c39d1955de1f5f2b4418cede4b823fc7f1bbbdb125685c9335a3174538caad1e",
+  "drat_sha256": "9c42e0c147f5adb9c6b8c3366b44af98a40c884900be61405114f8513dca10af",
+  "drat_bytes": 4033951,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 4,
+    "original_window_orbits": 2,
+    "first_wall_seconds": 5.584,
+    "total_wall_seconds": 7.433,
+    "output": "K68_e28_52000 3533 24 valid exact arithmetic witnesses, 4 window, fixed-CNF DRAT verified, archived 9c42e0c147f5adb9c6b8c3366b44af98a40c884900be61405114f8513dca10af"
+  }
+}

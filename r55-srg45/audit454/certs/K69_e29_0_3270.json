@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_0",
+  "idx": 3270,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "J@UXlLxo~S_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDw@z]QIqIhHhdWjKUPjAiYPfcqeFRHtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwAz]QKqHhHXdWjKMPjAiY`fcieFTHtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwAz]SKsHiHXTWlKMHjAYY`VcieFTHtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@z]SIsIiHhTWlKUHjAYYPVcqeFRHtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@v]KIkIeHiTWtKUHj@YYQVcrEFRPtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwAv]KKkHeHYTWtKMHj@YYaVcjEFTPtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwAv]IKiHdHYdWrKMPj@iYafcjEFTPtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@v]IIiIdHidWrKUPj@iYQfcrEFRPtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@}]KRKEUIeTXJKV@jAiXQVdSMFIbtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@}]SRSEYIdTXRKU`j@iXPVdSMFIbtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwA}]STSDYITTXRKM`j@iX`VdKMFKbtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwA}]KTKDUIUTXJKN@jAiXaVdKMFKbtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@|]IRIETIedXLKV@jAYXQfdSUFIdtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwA|]ITIDTIUdXLKN@jAYXafdKUFKdtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDwA|]QTQDXITdXTKM`j@YX`fdKUFKdtG",
+      51742866730896
+    ],
+    [
+      "UsbDMvYnDw@|]QRQEXIddXTKU`j@YXPfdSUFIdtG",
+      51742866730896
+    ]
+  ],
+  "blocked_cnf_sha256": "5cc95fefadcae8c2348e34621fb5c85cf29e5396bb0a784e1459e7bf91d304df",
+  "drat_sha256": "cdfa1dc0a095cd3ac9c6cbe02233cb76afa124ba07ace154a0521c5ff6b8df4d",
+  "drat_bytes": 19266792,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 41.591,
+    "total_wall_seconds": 62.632,
+    "output": "K69_e29_0 3270 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, regenerated cdfa1dc0a095cd3ac9c6cbe02233cb76afa124ba07ace154a0521c5ff6b8df4d"
+  }
+}

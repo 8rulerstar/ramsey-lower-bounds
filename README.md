@@ -6,9 +6,9 @@ Graphs and colourings that improve lower bounds for classical Ramsey numbers, wi
 checkers you can run. Comparison values are from the dynamic survey *Small Ramsey Numbers* (S. P. Radziszowski, DS1
 rev. 18, 2026) or, where newer, the google-research ramsey_number_bounds repository.
 
-The repository also contains one result of a different kind: a computer-assisted proof that no strongly regular graph
-SRG(45,22,10,11) is a (5,5)-graph, that is, a graph with no K5 and no independent 5-set (section "Nonexistence result").
-It is not a bound.
+The repository also contains results of a different kind about (5,5)-graphs on 45 vertices, that is, graphs with no K5 and
+no independent 5-set: a computer-assisted proof that no strongly regular graph SRG(45,22,10,11) is a (5,5)-graph, and two
+partial results (section "Nonexistence results"). None of them is a bound.
 
 ## Main results (new lower bounds)
 
@@ -18,16 +18,18 @@ It is not a bound.
 - In cells the survey does not list: **R(8,25) >= 2449** (2049 is the best value I could derive from published results),
   from theorem D12; **R(7,20) >= 933** (931 from known results).
 
-## Nonexistence result
+## Nonexistence results
 
 | statement | effect on bounds | method | folder |
 |---|---|---|---|
 | No SRG(45,22,10,11) is a (5,5)-graph; more generally no (5,5)-graph on 45 vertices has a vertex of degree 22 whose neighbours have the degrees and codegrees they would have in an SRG(45,22,10,11) (Theorem 2 in the folder) | none (43 <= R(5,5) <= 46 unchanged) | local Gram identity, exhaustive gluing over McKay's lists (912 CPU hours), exact determinant test | [`r55-srg45`](r55-srg45) |
 | (24,24) extremal-pair lemma: in a (5,5,45)-colouring, two vertices of red degree 24 whose red neighbourhoods have >= 127 edges are not joined by a red edge (computation complete; written covering argument pending; DRAT certificates for the 961 SAT-solver cases and a 1,000-placement sample) | none (43 <= R(5,5) <= 46 unchanged) | exhaustive check of 4,835,956,732 placements (propagation, failed-literal probing, CaDiCaL), independent engine on 100,000 samples | [`r55-pair2424`](r55-pair2424) |
+| No (5,5)-graph on 45 vertices has an automorphism of order 11 with four 11-cycles and one fixed point (the other order-11 actions, with 12, 23 or 34 fixed points, are not covered here) | none (43 <= R(5,5) <= 46 unchanged) | split by the fixed point's two links, 630 SAT cases, each checked with a DRAT proof by drat-trim (proofs regenerated, not archived) | [`r55-aut11`](r55-aut11) |
 
-This is not a bound. It rules out one natural family of highly regular candidates for a (5,5)-graph on 45 vertices. The proof is
-computer-assisted and has not yet been read by an expert. The statement and proof are in
-[`r55-srg45/NOTE.md`](r55-srg45/NOTE.md); what the proof depends on is listed in [`r55-srg45/README.md`](r55-srg45/README.md).
+None of these is a bound. The first row rules out one natural family of highly regular candidates for a (5,5)-graph on 45
+vertices. Its proof is computer-assisted and has not yet been read by an expert; the statement and proof are in
+[`r55-srg45/NOTE.md`](r55-srg45/NOTE.md), what it depends on is listed in [`r55-srg45/README.md`](r55-srg45/README.md), and
+[`r55-srg45/audit454`](r55-srg45/audit454) is a SAT recount of its 454 positive pairs. The other rows are documented in their folders.
 
 ## Constructions
 

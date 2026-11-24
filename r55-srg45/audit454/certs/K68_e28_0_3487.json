@@ -1,0 +1,76 @@
+{
+  "job": "K68_e28_0",
+  "idx": 3487,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "J@NJUapP{|_",
+  "enumerated": 14,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwNB[sP]BXH[bJXdojQxL@DjCMINSPNW",
+      363182759039969
+    ],
+    [
+      "UsbDMUtudwGvFwTMFoJRB]BciZRa\\?RjDcQNCpNW",
+      63609606382905
+    ],
+    [
+      "UsbDMUtudwKuFwTMFoJRB]BciZRa\\?RjDCYNCpNW",
+      7973208586715625
+    ],
+    [
+      "UsbDMUtudwMUFwTMFoJRBZBciZRI\\?RjDOYNCpNW",
+      5088276125816400
+    ],
+    [
+      "UsbDMUtudwIVFwTMFoJRBZBciZRI\\?RjDoQNCpNW",
+      5648147402232401
+    ],
+    [
+      "UsbDMUtudwIN[sTMNGH[bZBchjQ[\\@DjC[aNCpNW",
+      834862247284769
+    ],
+    [
+      "UsbDMUtudwJLVQS]FWJXBYdcbZO\\lBGZCoqND`NW",
+      -16385359212697959
+    ],
+    [
+      "UsbDMUtudwFMMkI]JcJeB\\BdCzOm\\BCjDHINB`NW",
+      -16385359212697959
+    ],
+    [
+      "UsbDMUtudwKxFwIuJoJbB]DdSZRPl?bZCaYNBHNW",
+      7973208586715625
+    ],
+    [
+      "UsbDMUtudwCzFwIuJoJbB]DdSZRPl?bZDaINBHNW",
+      63609606382905
+    ],
+    [
+      "UsbDMUtudwDjFwIuJoJbB[ddSZRDl?bZDgINBHNW",
+      5648147402232401
+    ],
+    [
+      "UsbDMUtudwLhFwIuJoJbB[ddSZRDl?bZCgYNBHNW",
+      5088276125816400
+    ],
+    [
+      "UsbDMUtudwDNZIIuNCIkR[ddPrPklAIZCZANBHNW",
+      834862247284769
+    ],
+    [
+      "UsbDMUtudwNBZIG}BeIkRSxdhRPuLAIZCUQNIHNW",
+      363182759039969
+    ]
+  ],
+  "blocked_cnf_sha256": "3202216d999393a6286f41304f6a6409d01313ca7add386f112587976b214ccc",
+  "drat_sha256": "243392763cdeb87edae22862a5232fdb0a85ad3dc533580dd3a4d7157a0e563d",
+  "drat_bytes": 4464330,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 11.175,
+    "total_wall_seconds": 19.113,
+    "output": "K68_e28_0 3487 14 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 243392763cdeb87edae22862a5232fdb0a85ad3dc533580dd3a4d7157a0e563d"
+  }
+}

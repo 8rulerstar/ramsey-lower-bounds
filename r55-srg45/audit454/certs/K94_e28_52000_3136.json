@@ -1,0 +1,52 @@
+{
+  "job": "K94_e28_52000",
+  "idx": 3136,
+  "K_g6": "I@Ce]YgTG",
+  "B_g6": "JGe]_lf]TR_",
+  "enumerated": 8,
+  "sols_g6_and_exact_det": [
+    [
+      "UseKfNetDSl[ZISug{@cxVBLYU`@pXiE[xBqBLSw",
+      -549397565832159
+    ],
+    [
+      "UseKfNetDSl[ZISug{B_xFbLYU`@pXiE[xBqBLSw",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSl[ZQSmg{@cxVBLYU`ApXhE[wbqBTSw",
+      -549397565832159
+    ],
+    [
+      "UseKfNetDSl[ZQSmg{B_xFbLYU`ApXhE[wbqBTSw",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSmk[sJMc{AWxMdK{MaApYTE\\WbqCrSw",
+      -549397565832159
+    ],
+    [
+      "UseKfNetDSmk[sJMc{BOxFdK{MaApYTE\\WbqCrSw",
+      127392139621296
+    ],
+    [
+      "UseKfNetDSmk[kJUc{AWxMdK{Ma@pYUE\\XBqCjSw",
+      -549397565832159
+    ],
+    [
+      "UseKfNetDSmk[kJUc{BOxFdK{Ma@pYUE\\XBqCjSw",
+      127392139621296
+    ]
+  ],
+  "blocked_cnf_sha256": "732ce49cded68ede8850a2a179ba1bf69fe89a09cfc8defa468bda1c8999100a",
+  "drat_sha256": "8088a45d2dfbf72030b4590fd6f151030b10df1271085af859477b9da3889e36",
+  "drat_bytes": 2715330,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 4,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 3.331,
+    "total_wall_seconds": 5.677,
+    "output": "K94_e28_52000 3136 8 valid exact arithmetic witnesses, 4 window, fixed-CNF DRAT verified, regenerated 8088a45d2dfbf72030b4590fd6f151030b10df1271085af859477b9da3889e36"
+  }
+}

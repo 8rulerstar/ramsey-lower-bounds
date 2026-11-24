@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_24000",
+  "idx": 3329,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "JGeI{h|krM_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDwMTK{ReatBahBRCKqzGhRPFsZDeWQrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLTI{Te`tBQhDRCSqzGhR`FsZDeWQrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLXI{Te`xBPhDJCTQzGhRaFsYdeWIrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLYIyTe`yBPXDLCTIzGXRaFsYdeWKrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLUIyTe`uBQXDTCSizGXR`FsZDeWSrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMdTUJwatBahAlCJIzEHROVs[TeWKrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMeTUJwauBaXAjCJQzEHROfs[LeWIrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMhTMJwaxB`hAtCIizDHROVs[TeWSrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMiTMJwayB`XArCIqzDHROfs[LeWQrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMUKyReauBaXBTCKizGXRPFsZDeWSrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMYKyReayB`XBLCLIzGXRQFsYdeWKrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLdRULw`tBQhClCRIzEHR_Vs[TeWKrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLhRMLw`xBPhCtCQizDHR_Vs[TeWSrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLeRULw`uBQXCjCRQzEHR_fs[LeWIrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwLiRMLw`yBPXCrCQqzDHR_fs[LeWQrg",
+      106185476952225
+    ],
+    [
+      "UsbDMvYnDwMXK{ReaxB`hBJCLQzGhRQFsYdeWIrg",
+      106185476952225
+    ]
+  ],
+  "blocked_cnf_sha256": "0754b731f3922e5e3086c1f712e6f00fbf6aa9a0e2bc08e3033c60cdcb6622df",
+  "drat_sha256": "516b4d388c2a5b8b090280c1ff92e17c7d8e78598a7f7ff4ab6dbcbd9bb15acf",
+  "drat_bytes": 4387882,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 6.566,
+    "total_wall_seconds": 8.665,
+    "output": "K69_e29_24000 3329 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, archived 516b4d388c2a5b8b090280c1ff92e17c7d8e78598a7f7ff4ab6dbcbd9bb15acf"
+  }
+}

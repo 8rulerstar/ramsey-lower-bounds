@@ -1,0 +1,100 @@
+{
+  "job": "K94_e28_28000",
+  "idx": 1751,
+  "K_g6": "I@Ce]YgTG",
+  "B_g6": "JB`Ju_nh\\w_",
+  "enumerated": 20,
+  "sols_g6_and_exact_det": [
+    [
+      "UseKfNetDSdjLiDkLWYegNOd[Jqpl@@q|BLJYH]G",
+      2318069514816
+    ],
+    [
+      "UseKfNetDSdfLqDsLSYdgNGd[Jqql@Aq|AlJYP]G",
+      2318069514816
+    ],
+    [
+      "UseKfNetDSmF[sSsDFWuW\\GdMbozL@Gq|ILJJP]G",
+      1377026736475181
+    ],
+    [
+      "UseKfNetDSmJ[kSkDJWtW\\OdNBozL@Gq|ILJJH]G",
+      1377026736475181
+    ],
+    [
+      "UseKfNetDSlJZIJIIJWxgYocvBovLACq{sTJSh]G",
+      1377026736475181
+    ],
+    [
+      "UseKfNetDSmY\\KDiHwW\\g[QcxJpS|B@a{\\DJQJ]G",
+      27429736488265584
+    ],
+    [
+      "UseKfNetDSmU\\SDqHsW]g[IcwjpS|BAa{[dJQR]G",
+      27429736488265584
+    ],
+    [
+      "UseKfNetDSme\\o@uJEWvG[IckjpS|BAa{]DJQR]G",
+      1590323972802345
+    ],
+    [
+      "UseKfNetDSmi\\g@mJIWvG[QclJpS|B@a{]DJQJ]G",
+      1590323972802345
+    ],
+    [
+      "UseKfNetDSiZRkBiMgXYWUocyRpp\\A@q{dTJ[H]G",
+      2318069514816
+    ],
+    [
+      "UseKfNetDSlXZg@mFHWzGYSdRRqg|B@Q{]DJKL]G",
+      1590323972802345
+    ],
+    [
+      "UseKfNetDSlTZo@uFDWzGYKdQrqg|BAQ{]DJKT]G",
+      1590323972802345
+    ],
+    [
+      "UseKfNetDSldYqBsEsWmWYKdWrqg|BAQ{YdJKT]G",
+      27429736488265584
+    ],
+    [
+      "UseKfNetDSlhYiBkEwWlWYSdXRqg|B@Q{ZDJKL]G",
+      27429736488265584
+    ],
+    [
+      "UseKfNetDSiVRsBqMcXXWUgcyRpq\\AAq{ctJ[P]G",
+      2318069514816
+    ],
+    [
+      "UseKfNetDSlFZQJQIFWygYgcubovLACq{sTJSp]G",
+      1377026736475181
+    ],
+    [
+      "UseKfNetDSbZ]IFo?vXXgSedpRrYLATA{sdJWR]G",
+      7881130493495600
+    ],
+    [
+      "UseKfNetDSbf]SFg?zYeWJEdgjrdL@iA|JDJWL]G",
+      7881130493495600
+    ],
+    [
+      "UseKfNetDSbj]KFo?vYdWJEdhJreL@hA|IdJWT]G",
+      7881130493495600
+    ],
+    [
+      "UseKfNetDSbV]QFg?zXYgSedorrXLAUA{tDJWJ]G",
+      7881130493495600
+    ]
+  ],
+  "blocked_cnf_sha256": "8ee00d53609f084b4854989682863c275d533b6ad1d118b7fe2a196b87d8810f",
+  "drat_sha256": "1a70aef2da15e081bd3142aee44cd79b87bec14989ab2faac30f16f0ae907abc",
+  "drat_bytes": 14323552,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 4,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 33.911,
+    "total_wall_seconds": 58.281,
+    "output": "K94_e28_28000 1751 20 valid exact arithmetic witnesses, 4 window, fixed-CNF DRAT verified, regenerated 1a70aef2da15e081bd3142aee44cd79b87bec14989ab2faac30f16f0ae907abc"
+  }
+}

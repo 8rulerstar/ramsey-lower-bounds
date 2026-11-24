@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_24000",
+  "idx": 1111,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "JGNSkWzUvF_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDw@}RqYke[?{R[FhCkj`GrARkkQuCTpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwA}Tq[kd[?{RYFhCkjPGrARksQuATpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@}RiYse[?{R[FhDKjaGr@RkkQuCLpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwA}Ti[sd[?{RYFhDKjQGr@RksQuALpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwA|Tk[qd[?{bYFhDSjQGr@bksIuAJpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwA|Ts[id[?{bYFhCsjPGrAbksIuARpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@|RsYie[?{b[FhCsj`GrAbkkIuCRpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@|RkYqe[?{b[FhDSjaGr@bkkIuCJpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@zJkZQib?|B[Xgakj_Wr@blJAuCTpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@vJsZIib?}B[XgbKj_WrAblIauCLpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwAzLi\\Shb?|BYXgasjOgr@RlRAuARpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@zJiZSib?|B[Xgasj_gr@RlJAuCRpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwAzLk\\Qhb?|BYXgakjOWr@blRAuATpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDw@vJqZKib?}B[XgbSj_grARlIauCJpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwAvLq\\Khb?}BYXgbSjOgrARlQauAJpw",
+      50868715362905
+    ],
+    [
+      "UsbDMvYnDwAvLs\\Ihb?}BYXgbKjOWrAblQauALpw",
+      50868715362905
+    ]
+  ],
+  "blocked_cnf_sha256": "29682ead463ed392a15e20fd621ac618e6f626bc115ec207ae8753180fec21c9",
+  "drat_sha256": "0246aca4f39fa92c1383b971ff22cc5f7088eefdb87bae818268184e3c638e6c",
+  "drat_bytes": 10271185,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 17.124,
+    "total_wall_seconds": 28.785,
+    "output": "K69_e29_24000 1111 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, regenerated 0246aca4f39fa92c1383b971ff22cc5f7088eefdb87bae818268184e3c638e6c"
+  }
+}

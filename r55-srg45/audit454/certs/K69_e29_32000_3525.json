@@ -1,0 +1,84 @@
+{
+  "job": "K69_e29_32000",
+  "idx": 3525,
+  "K_g6": "I?`Llhw]?",
+  "B_g6": "JKG]O|Fljr_",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMvYnDwB^Yi\\Sgr`YQMgLcUQa`w]C\\_dlCI{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^[iZSgr`iQMgLcUQQ`wmC\\_dlAI{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^Yq\\Kgr`XQMoLcUQ``w\\C\\`DlCQ{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^[qZKgr`hQMoLcUQP`wlC\\`DlAQ{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^Ys\\Igr`XaMoLcMQ`Pw\\C\\`DlCS{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^[sZIgr`haMoLcMQPPwlC\\`DlAS{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^Yk\\Qgr`YaMgLcMQaPw]C\\_dlCK{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwB^[kZQgr`iaMgLcMQQPwmC\\_dlAK{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBnZQ[kc{aUaVALaeP``w[c\\_LlCQ{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBn\\QYkc{aeaVALaePP`wkc\\_LlAQ{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBn\\SYic{aeQVCLaePPPwkS\\_TlAS{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBnZS[ic{aUQVCLaeP`Pw[S\\_TlCS{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBnZI[sc{aTaVALbEPa`w[c\\_LlCI{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBn\\IYsc{adaVALbEPQ`wkc\\_LlAI{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBn\\KYqc{adQVCLbEPQPwkS\\_TlAK{w",
+      5151781402889
+    ],
+    [
+      "UsbDMvYnDwBnZK[qc{aTQVCLbEPaPw[S\\_TlCK{w",
+      5151781402889
+    ]
+  ],
+  "blocked_cnf_sha256": "b4591e77d84be4867528b89144f03946947aa8667f232d147f5554a8a6207b43",
+  "drat_sha256": "8715ad665b31a33256a3fd1438c40ea61cb2d309c908f9ba70fa057fc8151aa1",
+  "drat_bytes": 8688646,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 16,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 13.658,
+    "total_wall_seconds": 25.444,
+    "output": "K69_e29_32000 3525 16 valid exact arithmetic witnesses, 16 window, fixed-CNF DRAT verified, regenerated 8715ad665b31a33256a3fd1438c40ea61cb2d309c908f9ba70fa057fc8151aa1"
+  }
+}

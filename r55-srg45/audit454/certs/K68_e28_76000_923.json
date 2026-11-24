@@ -1,0 +1,84 @@
+{
+  "job": "K68_e28_76000",
+  "idx": 923,
+  "K_g6": "I?`KjUs]?",
+  "B_g6": "JOLRKhJe~Z?",
+  "enumerated": 16,
+  "sols_g6_and_exact_det": [
+    [
+      "UsbDMUtudwFkRUVb@vB@rKYhyBIahOfClkCvGduo",
+      2286040974661961
+    ],
+    [
+      "UsbDMUtudwJpD]MxFFAKrWsh{BGZHPPclRCvWBuo",
+      4301918561823201
+    ],
+    [
+      "UsbDMUtudwKlKuFtH]@wRRahwbG`xOZClqCvWDuo",
+      316929177663296
+    ],
+    [
+      "UsbDMUtudwBrH{YxKr?prUQhwRGfHQiCkkcvWBuo",
+      220548711725309
+    ],
+    [
+      "UsbDMUtudwJ[KmNdAzBArQ[h{BHPXOZClqCvPBuo",
+      2286040974661961
+    ],
+    [
+      "UsbDMUtudwK]RMFjElAsbLchxBGQxOfClkCvWBuo",
+      316929177663296
+    ],
+    [
+      "UsbDMUtudwJbW{JxCvApbEUh{BGfHOkSlhCvWBuo",
+      -1183820651867491
+    ],
+    [
+      "UsbDMUtudwJpD]MxFFAHrWsh{BGZHPSclRCvWBuo",
+      33153027174772769
+    ],
+    [
+      "UsbDMUtudwBrPy\\XKr?qrMKhwJGZHPTClRCvWDuo",
+      220548711725309
+    ],
+    [
+      "UsbDMUtudwFRXYTxGz@qREMhyBGZHO[clocvWDuo",
+      -1183820651867491
+    ],
+    [
+      "UsbDMUtudwEZDyVhGz@orYahwRGXhQYCkpcvWHuo",
+      3959453430047225
+    ],
+    [
+      "UsbDMUtudwJpE]MxFFAHrWsh{BGZHPKclRCvWBuo",
+      1905005879108849
+    ],
+    [
+      "UsbDMUtudwFqE]VXJJ@ErXIhyBGfHQKSkkcvWDuo",
+      1905005879108849
+    ],
+    [
+      "UsbDMUtudwFqA}VXJJ@KrXIhyBGfHQaSkkcvWDuo",
+      4301918561823201
+    ],
+    [
+      "UsbDMUtudwFqA}VXJJ@ErXIhyBGfHQgSkkcvWDuo",
+      33153027174772769
+    ],
+    [
+      "UsbDMUtudwHfB{NpCvAor\\ChwJGeXPdClHcvWPuo",
+      3959453430047225
+    ]
+  ],
+  "blocked_cnf_sha256": "d89146db1e146c32659b2bd6fb0fe2f8669d21ed412675a80b20af659e5bdde8",
+  "drat_sha256": "0a5f9d6b644d19d7b3f3a261a12450f5ee2d29532af89ae52147c45ab09df0c2",
+  "drat_bytes": 6763949,
+  "drat_result": "VERIFIED",
+  "verified_repeat": {
+    "expected_window": 2,
+    "original_window_orbits": 1,
+    "first_wall_seconds": 8.96,
+    "total_wall_seconds": 15.452,
+    "output": "K68_e28_76000 923 16 valid exact arithmetic witnesses, 2 window, fixed-CNF DRAT verified, regenerated 0a5f9d6b644d19d7b3f3a261a12450f5ee2d29532af89ae52147c45ab09df0c2"
+  }
+}
