@@ -25,3 +25,7 @@ original authors when you use them. Files from google-research are under the Apa
 The files in r55-srg45/data (K/, B/, mckay/), r55-pair2424/d24_e127.g6 and r55-pair2424/data/r55_42some.g6 are copies of or selections from the Ramsey graph lists of Brendan D. McKay
 (https://users.cecs.anu.edu.au/~bdm/data/ramsey.html). They are not covered by this license; see that page for their terms
 and credit B. D. McKay when you use them.
+
+The comparison inputs in r55-split45/controls.tsv include three graphs from McKay's Ramsey graph lists
+and strongly regular graphs derived from Edward Spence's conference two-graph catalogue.
+The original catalogue data retain their respective terms. Sources are listed in r55-split45/README.md.

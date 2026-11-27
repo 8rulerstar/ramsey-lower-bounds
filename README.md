@@ -31,6 +31,10 @@ vertices. Its proof is computer-assisted and has not yet been read by an expert;
 [`r55-srg45/NOTE.md`](r55-srg45/NOTE.md), what it depends on is listed in [`r55-srg45/README.md`](r55-srg45/README.md), and
 [`r55-srg45/audit454`](r55-srg45/audit454) is a SAT recount of its 454 positive pairs. The other rows are documented in their folders.
 
+A related construction gives a 45-vertex (3,3)-split-critical graph containing a blue K9. Every one-vertex deletion has a split,
+although the full graph has none. The folder includes the graph, an exhaustive checker and certificates for 92 comparison records.
+[Construction and checks](r55-split45/README.md)
+
 ## Constructions
 
 All of them glue known Ramsey graphs along a common induced subgraph M. I have not found theorems H, P, D, D1, D12 and DG in
@@ -111,7 +115,7 @@ Please cite the Zenodo record, all versions: DOI [10.5281/zenodo.24128875](https
 ## Author, AI use and license
 
 Byungkun Jang, independent researcher, bkbkjang@gmail.com. The searches, constructions, proofs and checks were made with
-the help of an AI coding assistant (Claude); see each folder.
+the help of Claude and, for the split-critical graph and its checks, OpenAI Codex.
 
 Code: MIT. Documentation and the graphs constructed here: CC BY 4.0, please credit Byungkun Jang and cite the Zenodo DOI
 (see `LICENSE`, `CITATION.cff`). `r7-16/R(4, 15) >= 163.txt` and `r3-3-16/R3_15_73_input.txt` come from google-research
